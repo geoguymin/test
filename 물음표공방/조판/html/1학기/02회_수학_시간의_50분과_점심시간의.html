@@ -1,0 +1,302 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>물음표 공방 제2회</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"><style>
+:root{
+  --ink:#1f2430; --muted:#5f6675; --line:#d9dde5; --paper:#ffffff;
+  --yellow:#fff4cc; --yellow-b:#e2b100; --green:#e5f3e8; --green-b:#3f9a5a;
+  --blue:#e4eefc; --blue-b:#2f6fd0; --purple:#efe7fb; --purple-b:#7b4cc2;
+  --voice:#f6f1e8; --voice-b:#a07a3c; --bench:#eef0f4; --bench-b:#5d6577; --pink:#fde8ec;
+}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0; color:var(--ink); background:var(--paper);
+  font-family:'Nanum Myeongjo','NanumMyeongjo',serif; font-size:10.4pt; line-height:1.78;}
+main{max-width:176mm; margin:0 auto; padding:0 16px}
+/* 어절 기준 자간 맞춤: 양쪽 정렬 + 어절 단위 줄 나눔 */
+p, li, td, th, blockquote{text-align:justify; text-justify:inter-word; word-break:keep-all; overflow-wrap:break-word; line-break:strict; hanging-punctuation:none}
+p{margin:0 0 .55em}
+h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Variable',sans-serif}
+.kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
+.meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
+h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
+section{margin:0 0 6px}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
+.box h2{margin-top:2px}
+.yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
+.green{background:var(--green); border-left:5px solid var(--green-b)}
+.voice{background:var(--voice); border-left:5px solid var(--voice-b)}
+.blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
+.bench{background:var(--bench); border-left:5px solid var(--bench-b)}
+.yourturn{border:1.5px dashed var(--bench-b)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
+.blue strong{font-family:'Pretendard',sans-serif}
+.blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
+th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
+th{background:rgba(0,0,0,.045); font-weight:700}
+tr{break-inside:avoid}
+blockquote{margin:6px 0; padding:4px 12px; border-left:3px solid var(--line); color:#3d4352}
+ul,ol{margin:4px 0 8px; padding-left:1.3em}
+li{margin:0 0 3px}
+code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
+hr{border:0; border-top:1px solid var(--line); margin:12px 0}
+.ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
+@media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep2"><p class="kicker">물음표 공방 · 1학기 · 제2회</p><h1>수학 시간의 50분과 점심시간의 50분</h1><p class="meta">게재 권장 3월 3주 · 핵심 개념: 시간(핵심), 의식(확장), 기억(확장) · 최종 문항: E 존재·성격형 · 중점 기술: M3 전제 드러내기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>가입이 확정되고 처음 맞는 정기 모임 날이었다. 도하린은 7교시 종이 치기 전에 세미나실에 와서 지난주 사다리를 사진으로 남기고 화이트보드를 지웠다. 1층 게시판에 붙인 파란 카드 ‘나를 아는 것은 남을 아는 것보다 쉬운가?’ 밑에는 벌써 포스트잇 여섯 장이 달려 있었다. 새 사다리의 첫 칸을 긋고 있을 때, 윤채아가 가방을 내려놓으며 길게 한숨을 쉬었다.</p>
+<p>“6교시 수학, 진짜 안 끝나더라. 시계를 열 번은 봤어. 근데 점심시간은 눈 깜짝할 새 끝났잖아.”</p>
+<p>“그건 착각이지. 시간은 똑같아. 둘 다 50분이야.”</p>
+<p>하린은 마커 뚜껑을 닫았다. 숫자로 이미 끝난 이야기였다. 그런데 채아는 물러서지 않았다.</p>
+<p>“똑같은 건 알아. 근데 내가 산 50분은 똑같지 않았다니까…”</p>
+<p>새 시간표에 적응하느라 일주일 내내 교실을 헤맸다는 서윤이 옆에서 세차게 고개를 끄덕였다. 채아는 노란 포스트잇에 또박또박 적었다. ‘왜 수학 시간은 길고 점심시간은 짧게 느껴질까?’ 하린은 문장 끝의 ‘느껴질까’가 마음에 걸렸다. 느낌은 잴 수 없는 것이었고, 하린은 잴 수 없는 것이 늘 불편했다.</p>
+</section>
+<section class="box yellow"><h2>② 노란 카드: 질문ON 진단</h2><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>질문ON 진단</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>질문</td>
+<td>왜 수학 시간은 길고 점심시간은 짧게 느껴질까?</td>
+</tr>
+<tr>
+<td>꼴</td>
+<td>W 원인·원리형</td>
+</tr>
+<tr>
+<td>깊이 배지</td>
+<td>표면적 호기심</td>
+</tr>
+<tr>
+<td>블룸 배지</td>
+<td>이해하기 · UNDERSTAND</td>
+</tr>
+<tr>
+<td>① 사실 확인을 넘어서는가 — 단답으로 끝나지 않는 질문인가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가 — 배운 내용·다른 개념과 관계를 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가 — ‘왜’, ‘어떻게’로 원리를 파고드는가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가 — ‘만약 ~라면’, 비교·평가를 시도하는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가 — 자신의 이해·경험을 성찰하며 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>2/5</td>
+</tr>
+</tbody></table>
+<p>‘왜’로 원인을 물으니 꼴은 W예요. 겪은 일을 풀어 이해하려는 단계라 블룸은 이해하기, 깊이는 표면이에요. 꼴과 깊이는 서로 다른 축이라서 같은 W라도 원리를 파고들면 탐구가 돼요. 투덜거림에서 나온 표면 질문이라도 얼마든지 좋은 출발점이 될 수 있어요.</p>
+</section>
+<section class="box green"><h2>③ 질문 쪼개기(초록 카드)</h2><p>이번에도 꼴별로 쪼갰더니 네 꼴이 나왔어요.</p>
+<table>
+<thead>
+<tr>
+<th>꼴 코드</th>
+<th>하위 질문</th>
+<th>누가 냈나</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>★ F</td>
+<td>눈을 감고 1분을 세면 사람들은 실제로 몇 초를 셀까?</td>
+<td>하린</td>
+</tr>
+<tr>
+<td>W</td>
+<td>지루할 때 시간이 느리게 가는 것처럼 느껴지는 이유는 뭘까?</td>
+<td>채아</td>
+</tr>
+<tr>
+<td>C</td>
+<td>시간이란 게 도대체 뭐야?</td>
+<td>서윤</td>
+</tr>
+<tr>
+<td>E</td>
+<td>시계가 고장 나면 시간도 멈춘 거야?</td>
+<td>로아</td>
+</tr>
+</tbody></table>
+<p>이번에도 ★는 하린 몫이었어요. “측정부터. 몇 초나 어긋나는지 알아야 착각인지 아닌지 말할 수 있어.” 잰 기록이 크게 흩어지자 하린은 ‘실제’ 시간이라는 말부터 갈라 Q1을 썼어요.</p>
+<p>이번 주에 선생님이 일부러 틀리게 붙인 꼴은 E 질문의 F였어요. ‘~한 거야?’로 끝나니 사실 확인처럼 보이거든요. 격주로 오는 민지가 “고장 난 시계를 들여다본다고 답이 나와?” 하고 E로 바로잡았어요. F는 조사나 측정으로 답이 하나로 정해질 때만 붙여요. 시간이 멈추느냐는 시간의 성격을 따져야 끝나는 질문이에요.</p>
+</section>
+<section class="journal"><h2>④ 탐구 일지</h2><p>다음 날 오전 쉬는 시간마다 하린은 과학실에서 빌린 스톱워치를 들고 반 친구 12명에게 차례로 눈을 감고 속으로 1분을 세게 했다. 기록은 38초부터 1분 41초까지 흩어졌다(동아리 자체 조사).</p>
+<p>“봐, 시계는 하나야. 틀린 건 사람 쪽이지.”</p>
+<p>말은 그렇게 했지만 개운하지 않았다. 1분 41초를 센 친구는 지루해서 천천히 셌다고 했고, 38초를 센 친구는 줄어드는 급식 줄을 떠올리며 셌다고 했다. 둘 다 거짓말은 아니었다.</p>
+<p>“그럼 질문을 바꾸자. 체감 시간과 ‘실제’ 시간은 무엇이 다른가?”</p>
+<p>하린은 그 문장을 단톡방에 올리며 ‘실제’에 따옴표를 쳤다. 자기도 그 말이 조금 수상해졌기 때문이었다. 오정민 선생님은 기술 이름만 답장으로 보냈다. M2 구분하기.</p>
+<p>그날 점심 모임에서 선생님은 발췌 두 장을 나눠 주었다. 아우구스티누스는 아무도 묻지 않으면 시간이 무엇인지 알지만, 설명하려 하면 모른다고 썼다. 채아는 그 줄에 밑줄을 긋고 꼭 자기 얘기 같다고 했다. 하린은 물리 시간에 들은 뉴턴으로 맞섰다.</p>
+<p>“시간은 바깥 어떤 것과도 상관없이 균일하게 흘러. 시계는 그걸 재는 거고.”</p>
+<p>“있잖아. 그럼 우리, 시간은 시계가 정한다는 걸 깔고 얘기한 거네? 그것부터 맞는지 봐야 하지 않아?”</p>
+<p>채아가 사다리에 카드 한 장을 더 올렸다. ‘시간은 시계 속에 있는가, 마음속에 있는가?’ 선생님이 그 옆에 M3 전제 드러내기라고 적었다. 하린은 반박하려다 멈췄다. 그 전제를 한 번도 의심해 본 적이 없었다.</p>
+<p>그날 저녁 단톡방에 채아의 메시지가 올라왔다. ‘내 얘기 하나 해도 돼? 아니, 우리 할머니 얘기.’ 채아가 전화로 물어보니 할머니는 시계를 장날에나 봤다며 이렇게 말했다고 했다. ‘옛날엔 모내기 끝나면 한 해가 간 거지.’ 하린은 반박할 거리를 찾으려고 표준시의 역사를 뒤졌다. 그런데 찾을수록 불리했다. 고장마다 해를 보고 맞추던 시각을 하나로 묶은 것은 19세기 철도 시간표였고, 그리니치를 경도의 기준으로 삼은 것도 1884년 국제 회의의 결정이었다[1]. 시계의 시간도 사람들이 맞춘 약속이었다.</p>
+<p>하린은 ‘그건 근거가 아니라 느낌이잖아’라고 쓰다가 지웠다. 할머니의 한 해는 느낌이 아니라 논과 계절로 잰 시간이었다. 하린이 ‘반례: 시계 없이 산 시간’이라고 적은 분홍 카드 사진을 보내자, 채아가 그 위에 마지막 카드를 올렸다. ‘시계가 재는 시간만이 진짜 시간인가?’ 선생님의 답장은 짧았다. ‘M4 반례 찾기. 반례는 선물이에요.’</p>
+<p>[1] 데릭 하우스, 『Greenwich Time and the Discovery of the Longitude』(1980).</p>
+</section>
+<section class="ladder"><h2>⑤ 질문 사다리</h2><p>라벨 규칙은 지난주와 같아요. 꼴과 깊이는 부원들이, 블룸과 기술 이름은 선생님이 붙였어요.</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>질문</th>
+<th>꼴</th>
+<th>깊이</th>
+<th>블룸</th>
+<th>바꾼 기술</th>
+<th>계기</th>
+<th>바꾼 사람·이름 붙인 사람</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Q0 · 노란 카드</td>
+<td>왜 수학 시간은 길고 점심시간은 짧게 느껴질까?</td>
+<td>W</td>
+<td>표면</td>
+<td>이해하기</td>
+<td>—</td>
+<td>똑같은 50분이 다르게 흐름</td>
+<td>〔채아 물음〕</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>체감 시간과 ‘실제’ 시간은 무엇이 다른가?</td>
+<td>C</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M2 구분하기</td>
+<td>③에서 고른 F, 1분 세기 기록이 38초에서 1분 41초까지 흩어짐(동아리 자체 조사)</td>
+<td>〔하린 바꿈·선생님 명명〕</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>시간은 시계 속에 있는가, 마음속에 있는가?</td>
+<td>E</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M3 전제 드러내기</td>
+<td>아우구스티누스와 뉴턴이 맞서자 ‘시간은 시계가 정한다’는 전제를 의심함</td>
+<td>〔채아 바꿈·선생님 명명〕</td>
+</tr>
+<tr>
+<td>Q3 · 파란 카드</td>
+<td>시계가 재는 시간만이 진짜 시간인가?</td>
+<td>E</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M4 반례 찾기</td>
+<td>할머니의 ‘모내기 끝나면 한 해’, 표준시의 역사</td>
+<td>〔채아 바꿈·선생님 명명〕</td>
+</tr>
+<tr>
+<td>보라 카드</td>
+<td>내가 ‘버린 시간’이라고 부르는 시간은 무엇을 기준으로 잰 것일까?</td>
+<td>C</td>
+<td>성찰</td>
+<td>분석하기</td>
+<td>M13 나에게로 돌리기</td>
+<td>파란 카드를 나에게로 돌림</td>
+<td>〔선생님 시범〕</td>
+</tr>
+</tbody></table>
+<p><strong>만든 것</strong> — 1분 세기 기록표(12명), 할머니 통화 메모, 표준시 연표</p>
+</section>
+<section class="box voice"><h2>⑥ 사상가의 목소리</h2><ul>
+<li><strong>아우구스티누스</strong> “그렇다면 시간이란 무엇인가? 아무도 내게 묻지 않으면 나는 안다. 묻는 이에게 설명하려 하면 나는 모른다.” — 『고백록』 11권 14장(원문을 직접 옮김). 그는 과거는 이미 없고 미래는 아직 없는데도 우리가 시간의 길고 짧음을 잰다는 수수께끼에서 출발했어요. 그리고 과거는 기억으로, 현재는 주목으로, 미래는 기대로 영혼 안에 있다고 보았어요(11권 20장, 28장). 시간을 재는 곳도 결국 영혼이라는 거예요(11권 27장).</li>
+<li><strong>뉴턴</strong> “절대적이고 참되며 수학적인 시간은 그 자체로, 그 본성에 따라, 바깥의 어떤 것과도 관계없이 한결같이 흐른다.” — 『프린키피아』(1687) 정의 뒤의 주해(원문을 직접 옮김). 그런데 뉴턴은 바로 이어서, 한 시간, 하루, 한 달처럼 운동으로 재는 시간을 ‘상대적이고 겉보기의 일상적 시간’이라 부르며 참된 시간과 구별했어요. 뉴턴에게도 시계의 숫자가 곧 참된 시간은 아니었던 셈이에요.</li>
+</ul>
+<p>부딪히는 자리는 시간이 어디에 있느냐예요. 뉴턴에게 시간은 마음 밖에서 그 자체로 흐르고, 아우구스티누스에게 시간은 마음이 펼치고 재는 것이에요. 하린이 뉴턴 편에 서면서 ‘시계가 곧 시간’이라는 생각을 깔았다는 점도 눈여겨보세요. 뉴턴 자신은 그 둘을 나눴거든요.</p>
+</section>
+<section class="box blue"><h2>⑦ 파란 카드와 보라 카드</h2><p><strong>시계가 재는 시간만이 진짜 시간인가?</strong></p>
+<p>E 존재·성격형 (탐구 · 평가하기 · 루브릭 3/5: ①②④)</p>
+<ul>
+<li><strong>핵심 개념어</strong>: ‘시간’은 일이 앞뒤로 이어지며 지속되는 흐름, 또는 그 흐름을 재는 단위예요. ‘의식’은 그 흐름을 겪는 마음, ‘기억’은 지나간 시간을 지금 붙잡아 두는 힘이에요.</li>
+<li><strong>문제 제기</strong>: 시계는 누구에게나 같은 숫자를 보여 주니 가장 믿을 만해 보여요. 그런데 왜 우리는 같은 50분을 다른 길이로 살까요? 모내기로 한 해를 세던 삶은 가짜 시간을 산 것일까요?</li>
+<li><strong>논의 방향</strong>: (가) 잴 수 있어야 진짜 시간이라는 길 (나) 시간은 마음이 재는 것이라는 길 (다) 시계의 시간도, 계절의 시간도 함께 맞춘 약속이라는 길</li>
+</ul>
+<p>※ 바칼로레아 문항은 일반 질문이라 ③⑤를 일부러 비워 두며, 그 칸은 문제 제기와 보라 카드가 채워요.</p>
+<p><strong>보라 카드</strong> 〔선생님 시범〕 내가 ‘버린 시간’이라고 부르는 시간은 무엇을 기준으로 잰 것일까? — C · 성찰 · 분석하기 · 루브릭 4/5(①②③⑤)</p>
+</section>
+<section class="box bench"><h2>⑧ 논술 작업대</h2><h3>문항이 깔고 있는 상식을 찾아 문제 제기로 바꿔요</h3>
+<p>M3 전제 드러내기는 논술에서 서론의 문제 제기로 곧장 쓰여요. 순서는 세 단계예요.</p>
+<ol>
+<li>밑줄 긋기: 문항에서 판정을 거는 낱말을 찾아요. 이번에는 ‘만이’와 ‘진짜’예요.</li>
+<li>상식 꺼내기: 그 낱말이 기대고 있는 상식을 한 문장으로 적어요. ‘시간은 시계가 재는 것이다.’</li>
+<li>흔들기: 그 상식이 흔들리는 장면 하나를 붙이고 질문으로 끝내요.</li>
+</ol>
+<p>예시 서론: “우리는 시간이 궁금하면 시계를 본다. 이 습관에는 시간이 곧 시계가 재는 것이라는 상식이 깔려 있다. 그러나 같은 50분이 수학 시간에는 길고 점심시간에는 짧으며, 시계를 장날에나 보던 할머니에게 한 해는 모내기에서 모내기까지였다. 그렇다면 시계의 숫자는 시간 그 자체인가, 시간을 재는 여러 방법 가운데 하나인가?”</p>
+<p>전제를 꺼낸 뒤 곧바로 틀렸다고 단정하지는 마세요. 서론이 할 일은 그 전제를 의심할 이유를 보여 주는 데까지예요. 답은 본론이 찾아요.</p>
+</section>
+<section class="box yourturn"><h2>⑨ 너의 질문 차례</h2><p><strong>다른 형식의 문항</strong> — [R 관계·조건형] 시간은 의식 없이도 흐르는가?</p>
+<p>내 Q0가 당연하게 깔고 있는 상식 하나를 찾아 한 문장으로 적고, 그 상식을 묻는 질문으로 M3를 써서 고쳐 보세요. 아래 칸에는 ✔ 또는 ✕를 적어요.</p>
+<table>
+<thead>
+<tr>
+<th>질문ON 루브릭</th>
+<th>내 Q0</th>
+<th>고쳐 쓴 질문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 사실 확인을 넘어서는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>□/5</td>
+<td>□/5</td>
+</tr>
+</tbody></table>
+<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘수학 시간이 길다고 할 때, 그 길이는 시계로 잰 길이인가요, 느낌의 길이인가요?’ 같은 발문이 왔다면, 그건 M 몇 번 기술일까요? 힌트는 한 낱말 속 두 뜻이에요.</p>
+<p><strong>연결 교과</strong> — 통합과학1(과학의 기초 — 시간과 공간, 측정), 물리학, 인간과 철학, 문학(시간 의식과 서술)</p>
+<p><strong>다음 주 예고</strong> — 서윤이 반 단톡방에 보낸 ‘ㅇㅋ’ 두 글자에 ‘화났어?’라는 개인톡이 돌아오고, 로아는 프랑스어 ça va 이야기로 그 오해를 파고들어요.</p>
+</section>
+<section class="teacher"><h2>⑩ 교사용 노트(부록)</h2><ul>
+<li>수업 연결: 통합과학 측정 단원 도입에서 ‘눈 감고 1분 세기’를 짝 활동으로 하고, ‘측정 오차인가, 다른 시간인가’라는 질문으로 마무리한다.</li>
+<li>안전: 기록이 크게 벗어난 학생을 놀리지 않게 할 것. 가족 인터뷰는 원하는 학생만 하고, 책 속 인물로 바꿔도 된다고 안내할 것. 가족이 아닌 어른을 인터뷰할 때는 교사를 거친다.</li>
+<li>범위 밖 질문: 상대성 이론의 시간 지연이 나오면 물리 교사와 연계하거나 F 카드로 남기고, 이번 회 쟁점인 ‘진짜 시간’의 기준으로 돌아온다.</li>
+<li>⑨ 후속 발문 예시 답: M2 구분하기(‘길다’ 한 낱말에 섞인 두 뜻을 가름).</li>
+</ul>
+</section></article></main></body></html>

@@ -1,0 +1,371 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>물음표 공방 제12회</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"><style>
+:root{
+  --ink:#1f2430; --muted:#5f6675; --line:#d9dde5; --paper:#ffffff;
+  --yellow:#fff4cc; --yellow-b:#e2b100; --green:#e5f3e8; --green-b:#3f9a5a;
+  --blue:#e4eefc; --blue-b:#2f6fd0; --purple:#efe7fb; --purple-b:#7b4cc2;
+  --voice:#f6f1e8; --voice-b:#a07a3c; --bench:#eef0f4; --bench-b:#5d6577; --pink:#fde8ec;
+}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0; color:var(--ink); background:var(--paper);
+  font-family:'Nanum Myeongjo','NanumMyeongjo',serif; font-size:10.4pt; line-height:1.78;}
+main{max-width:176mm; margin:0 auto; padding:0 16px}
+/* 어절 기준 자간 맞춤: 양쪽 정렬 + 어절 단위 줄 나눔 */
+p, li, td, th, blockquote{text-align:justify; text-justify:inter-word; word-break:keep-all; overflow-wrap:break-word; line-break:strict; hanging-punctuation:none}
+p{margin:0 0 .55em}
+h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Variable',sans-serif}
+.kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
+.meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
+h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
+section{margin:0 0 6px}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
+.box h2{margin-top:2px}
+.yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
+.green{background:var(--green); border-left:5px solid var(--green-b)}
+.voice{background:var(--voice); border-left:5px solid var(--voice-b)}
+.blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
+.bench{background:var(--bench); border-left:5px solid var(--bench-b)}
+.yourturn{border:1.5px dashed var(--bench-b)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
+.blue strong{font-family:'Pretendard',sans-serif}
+.blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
+th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
+th{background:rgba(0,0,0,.045); font-weight:700}
+tr{break-inside:avoid}
+blockquote{margin:6px 0; padding:4px 12px; border-left:3px solid var(--line); color:#3d4352}
+ul,ol{margin:4px 0 8px; padding-left:1.3em}
+li{margin:0 0 3px}
+code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
+hr{border:0; border-top:1px solid var(--line); margin:12px 0}
+.ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
+@media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep12"><p class="kicker">물음표 공방 · 1학기 · 제12회</p><h1>찍어서 맞힌 문제, 나는 알았던 걸까</h1><p class="meta">게재 권장 6월 2주 · 핵심 개념: 진리(핵심), 이성(핵심), 직관(확장) · 최종 문항: P 가능성형 · 중점 기술: M4 반례 찾기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>월요일 점심, 민지는 급식실 구석 자리에서 식판을 밀어 두고 6월 모의평가 가채점지와 수학 시험지를 나란히 펼쳤다. 지난주 계주 규칙을 두고 하이에크 편을 들어 하린을 몰아붙였던 바로 그 자리였다. 시험지에는 민지만 아는 표시가 있었다. 끝까지 푼 문제에는 동그라미, 감으로 고른 문제에는 세모. 결과는 얄궂었다. 세모를 친 15번은 맞았고, 여백을 까맣게 채워 끝까지 푼 13번은 마지막 줄의 계산 실수로 틀렸다.</p>
+<p>“찍은 건 아는 게 아니죠.”</p>
+<p>맞은편에서 오답 노트를 넘기던 하린이 고개도 들지 않고 말했다. 민지는 세모 위를 손톱으로 톡톡 두드렸다.</p>
+<p>“감도 실력이야. 내가 지금까지 푼 문제가 몇 개인데. 아빠한테도 맞은 개수만 보낼 거야. 아빠는 찍은 건지 푼 건지 안 물어보거든.”</p>
+<p>“그건 근거가 아니라 느낌이잖아요.”</p>
+<p>민지는 펜을 내려놓고 시험지를 하린 쪽으로 돌렸다.</p>
+<p>“그럼 말해 봐. 감으로 찍은 게 맞았으면 그것도 아는 거야?”</p>
+<p>반례 하나면 끝이라던 하린이 이번에는 말을 고르느라 한참 입을 열지 못했다. 민지는 가채점지 귀퉁이에 노란 포스트잇을 붙이고 방금 한 말을 그대로 옮겨 적었다.</p>
+</section>
+<section class="box yellow"><h2>② 노란 카드: 질문ON 진단</h2><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>질문ON 진단</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>질문</td>
+<td>감으로 찍은 게 맞았으면 그것도 아는 거야?</td>
+</tr>
+<tr>
+<td>꼴</td>
+<td>E 존재·성격형</td>
+</tr>
+<tr>
+<td>깊이 배지</td>
+<td>표면적 호기심</td>
+</tr>
+<tr>
+<td>블룸 배지</td>
+<td>이해하기 · UNDERSTAND</td>
+</tr>
+<tr>
+<td>① 사실 확인을 넘어서는가 — 단답으로 끝나지 않는 질문인가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가 — 배운 내용·다른 개념과 관계를 묻는가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가 — ‘왜’, ‘어떻게’로 원리를 파고드는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가 — ‘만약 ~라면’, 비교·평가를 시도하는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가 — 자신의 이해·경험을 성찰하며 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>2/5</td>
+</tr>
+</tbody></table>
+<p>채점표로 맞았다는 사실은 이미 확인됐으니, 남은 건 그것을 ‘안다’고 불러도 되느냐예요. 그래서 조사가 아니라 낱말의 뜻을 따져야 끝나는 E이고, ‘찍음’과 ‘앎’을 맞대어 ②까지 켜졌어요. 아직 뜻을 확인하는 단계라 블룸은 이해하기, 깊이는 표면이에요. 꼴이 E라고 깊이까지 정해지지는 않으니, 가채점지 귀퉁이에서 나온 이 표면 질문도 충분히 좋은 출발점이 돼요.</p>
+</section>
+<section class="box green"><h2>③ 질문 쪼개기(초록 카드)</h2><p>이번 회부터는 관점별로 쪼개요. 같은 가채점지를 확률의 눈, 전문가의 눈, 낱말의 눈, 수험생의 눈, 양심의 눈으로 차례로 들여다봤어요.</p>
+<table>
+<thead>
+<tr>
+<th>꼴 코드</th>
+<th>하위 질문</th>
+<th>누가 냈나</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F</td>
+<td>오지선다에서 무작위로 찍으면 정답 확률은 얼마야?</td>
+<td>하린(확률의 눈)</td>
+</tr>
+<tr>
+<td>W</td>
+<td>바둑 기사나 의사의 ‘감’은 어떻게 만들어질까?</td>
+<td>로아(전문가의 눈)</td>
+</tr>
+<tr>
+<td>★ C</td>
+<td>‘감’이란 게 정확히 뭐야?</td>
+<td>서윤(낱말의 눈)</td>
+</tr>
+<tr>
+<td>V</td>
+<td>끝까지 푼 오답이랑 찍은 정답, 어느 쪽이 더 실력이야?</td>
+<td>민지(수험생의 눈)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>찍어서 맞힌 점수도 내 점수라고 해도 돼?</td>
+<td>채아(양심의 눈)</td>
+</tr>
+</tbody></table>
+<p>★는 민지가 골랐어요. “감이 뭔지부터. 그게 정해져야 내 세모가 찍은 건지 감인지 갈리잖아.” 자기가 낸 V는 ‘실력’을 비교하려면 감의 정체부터 알아야 한다며 내려놓았어요. 카드 주인 서윤은 “근데요, 근데요! 그거 제 거예요!” 하며 손을 번쩍 들었고요. 하린의 반례가 이 질문을 어떻게 고쳐 놓았는지는 탐구 일지가 이어서 보여 줘요.</p>
+</section>
+<section class="journal"><h2>④ 탐구 일지</h2><p>목요일 7교시, 격주로 오는 주가 아닌데도 가채점지를 들고 온 민지는 서윤의 초록 카드 아래에 자기 답부터 적었다. ‘감 = 맞히는 힘’. 하린이 곧바로 손을 들었다.</p>
+<p>“멈춘 줄 모르고 시계를 봤는데 마침 그 시각이 맞았다고 해 봐요. 그 사람은 시각을 안 거예요? 반례 하나면 끝이에요.”</p>
+<p>러셀이 든 사고실험이었다. 민지는 대꾸할 말을 찾다가 웃어 버렸다. 맞히긴 했지만 안 건 아니었다. 하린은 카드를 ‘맞힌 것과 아는 것은 같은가?’로 고쳐 붙이고 ‘C, 탐구, 분석하기, M4’를 적었다. 이어 화이트보드 구석에 계산을 했다. 민지가 세모를 친 네 문제 가운데 두 문제가 맞았는데, 오지선다에서 무작위로 찍어 두 문제 이상 맞힐 확률은 약 18%였다(동아리 자체 조사). 운만으로도 대여섯 번에 한 번꼴은 일어나는 일이었고, 감이라 하기엔 증거가 모자랐다. 숫자는 어느 편도 들어 주지 않았다.</p>
+<p>“그럼 정의부터 하죠. 앎은 근거가 있고 참인 믿음이에요. 찍은 건 근거가 없으니까 탈락.”</p>
+<p>그날 밤 민지는 3월부터 쌓아 온 기출 풀이 노트를 뒤지다가 한 페이지에서 멈췄다. 부호를 중간에 한 번 잘못 넘기고 마지막에 또 한 번 잘못 넘겨, 근거 있게 푼 풀이가 우연히 정답에 닿은 문제였다. 민지는 사진을 찍어 단톡방에 올렸다.</p>
+<p>‘근거도 있고 답도 맞았어. 근데 이거, 내가 안 거야?’</p>
+<p>민지가 질문을 ‘근거도 있고 맞기까지 했다면 그것은 지식인가?’로 고쳐 올리자 하린의 답장이 왔다.</p>
+<p>‘근거라는 조건을 붙여도 못 막네요. M8.’</p>
+<p>이튿날 점심, 민지는 기사 한 장을 식판 옆에 내려놓았다. 한 프로 바둑 기사가 수를 다 읽기 전에 손이 먼저 가는 자리가 있다고 말한 인터뷰였다. 하린 앞에는 어제 선생님이 사다리 옆에 붙여 두고 간 폴라니의 글이 있었다.</p>
+<p>“오늘은 네가 직관 편 해. 일부러.”</p>
+<p>하린은 글을 한참 읽고 나서 민지를 보았다.</p>
+<p>“전교생 사이에서도 언니 얼굴은 바로 찾아요. 어떻게 찾는지는 말 못 하는데, 그렇다고 모른다고는 못 하겠어요.”</p>
+<p>변론하던 하린이 잠깐 말을 멈췄다.</p>
+<p>“저, 증명되는 것만 앎이라고 쳐 왔나 봐요.”</p>
+<p>“방금 네 입장 뒤집은 거야. M7.”</p>
+<p>하린은 그 자리에서 질문을 고쳤다. ‘이성으로 설명되지 않는 앎은 열등한 앎인가?’</p>
+<p>방과 후 도서관 자습실에서 민지는 오답 노트의 세모를 둘로 나눴다. 아무 근거 없이 고른 것은 회색으로 ‘무작위로 찍음’, 비슷한 문제를 수십 번 풀고 나서 손이 먼저 간 것은 주황색으로 ‘쌓인 감으로 고름’. 15번 앞에서는 한참 펜이 멈췄다. 민지는 3층 세미나실에 올라가 사다리의 ‘탐구’ 칸 옆에 파란 카드를 붙였다. ‘이유를 댈 수 없는 것도 알 수 있는가?’ 사진을 본 하린의 답은 한 줄이었다.</p>
+<p>‘바둑판에서 앎 전체로 범위를 넓혔네요. M6.’</p>
+</section>
+<section class="ladder"><h2>⑤ 질문 사다리</h2><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>질문</th>
+<th>꼴</th>
+<th>깊이</th>
+<th>블룸</th>
+<th>바꾼 기술</th>
+<th>계기</th>
+<th>바꾼 사람·이름 붙인 사람</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Q0 · 노란 카드</td>
+<td>감으로 찍은 게 맞았으면 그것도 아는 거야?</td>
+<td>E</td>
+<td>표면</td>
+<td>이해하기</td>
+<td>—</td>
+<td>가채점지의 세모와 동그라미, 하린의 ‘찍은 건 아는 게 아니죠’</td>
+<td>〔민지 물음〕</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>맞힌 것과 아는 것은 같은가?</td>
+<td>C</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M4 반례 찾기</td>
+<td>③에서 민지가 고른 C(‘감이 뭔지부터’), 하린이 든 러셀의 멈춘 시계</td>
+<td>〔하린 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>근거도 있고 맞기까지 했다면 그것은 지식인가?</td>
+<td>E</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M8 조건 붙이기</td>
+<td>실수 두 개가 상쇄돼 우연히 맞은 기출 풀이(게티어형 사례)</td>
+<td>〔민지 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>이성으로 설명되지 않는 앎은 열등한 앎인가?</td>
+<td>V</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M7 입장 뒤집기</td>
+<td>바둑 기사 인터뷰와 폴라니의 글, 직관 편을 변론하다 멈춘 하린</td>
+<td>〔하린 바꿈·민지 명명〕</td>
+</tr>
+<tr>
+<td>Q4 · 파란 카드</td>
+<td>이유를 댈 수 없는 것도 알 수 있는가?</td>
+<td>P</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M6 범위 조절하기</td>
+<td>오답 노트에 ‘무작위로 찍음’과 ‘쌓인 감으로 고름’을 나눠 표시</td>
+<td>〔민지 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>보라 카드</td>
+<td>내가 ‘감’으로 고른 답 가운데 무엇이 쌓인 공부에서 나왔고 무엇이 운이었을까?</td>
+<td>C</td>
+<td>성찰</td>
+<td>분석하기</td>
+<td>M13 나에게로 돌리기</td>
+<td>두 색 사이에서 멈춘 15번</td>
+<td>〔민지 바꿈·민지 명명〕</td>
+</tr>
+</tbody></table>
+<p><strong>만든 것</strong> — 찍은 문제 확률 계산, 게티어형 기출 풀이 사진, 두 색으로 나눈 오답 노트</p>
+</section>
+<section class="box voice"><h2>⑥ 사상가의 목소리</h2><h3>제시문 — 마이클 폴라니, 『암묵적 영역』(1966) 1장의 논지</h3>
+<blockquote>
+<p>폴라니는 인간의 앎을 다시 생각하는 출발점으로 한 가지 사실을 내세운다. “우리는 말할 수 있는 것보다 더 많이 안다”(직접 인용, 작가 옮김). 그가 먼저 드는 예는 얼굴이다. 우리는 아는 사람의 얼굴을 수많은 얼굴 가운데서도 가려내지만, 무엇을 보고 알아보았는지 물으면 대개 제대로 대답하지 못한다. 경찰의 몽타주처럼 눈, 코, 입 그림을 하나씩 골라 얼굴을 조합하게 하면 그 앎의 일부를 남에게 전할 수는 있다. 그러나 그런 도구가 주어지기 전에도 우리는 이미 그 얼굴을 알고 있었다. 폴라니는 능숙한 솜씨도 이처럼 말로 다 옮기지 못하는 앎에 기대고 있다고 보고, 이런 앎을 빼놓고는 인간의 앎을 제대로 설명할 수 없다고 말한다.</p>
+</blockquote>
+<h3>버트런드 러셀 — 참인 믿음만으로는 모자라다</h3>
+<p>러셀은 『인간의 지식』(1948)에서, 멈춘 줄 모르는 시계를 보았는데 마침 그 시각이 맞았다면 그 사람은 시각에 대해 참인 믿음을 얻었지만 앎을 가졌다고는 할 수 없다고 보았어요. 맞았다는 것만으로는 앎이 되지 않는다는 거예요.</p>
+<h3>에드먼드 게티어 — 근거를 더해도 모자라다</h3>
+<p>게티어는 세 쪽짜리 논문 「정당화된 참인 믿음은 지식인가?」(1963)에서, 근거를 갖춘 참인 믿음이라도 근거와 참이 우연히 맞아떨어졌을 뿐이면 지식이라 하기 어려운 반례를 내놓았어요. 민지의 ‘상쇄된 실수’가 바로 이 모양이에요.</p>
+<h3>어디서 부딪힐까</h3>
+<p>러셀과 게티어의 사례는 ‘참’ 위에 무엇을 더해야 앎이 되는지 묻게 해요. 이때 흔히 떠올리는 답은 근거, 곧 이유를 댈 수 있음이에요. 폴라니는 바로 그 생각에 물음표를 붙여요. 이유를 댈 수 없는데도 운이 아닌 앎이 있다면, 앎과 운을 가르는 선은 어디에 그어야 할까요?</p>
+</section>
+<section class="box blue"><h2>⑦ 파란 카드와 보라 카드</h2><p><strong>이유를 댈 수 없는 것도 알 수 있는가?</strong></p>
+<p>P 가능성형 (탐구 · 평가하기 · 루브릭 3/5: ①②④)</p>
+<ul>
+<li><strong>핵심 개념어</strong>: 진리는 믿음이 실제와 맞는 것이에요. 이성은 근거를 들어 판단하고 설명하는 힘, 직관은 추론을 거치지 않고 곧바로 알아차리는 앎이에요. ‘알 수 있는가’는 그런 앎이 실제로 있느냐와 앎이라 불러도 되느냐를 함께 물어요.</li>
+<li><strong>문제 제기</strong>: 왜 이유를 대지 못하는 정답은 ‘찍은 것’으로 의심받을까요? 그런데 왜 아는 얼굴을 알아보는 일은 아무도 운이라 하지 않을까요?</li>
+<li><strong>논의 방향</strong>: 말로 댈 수 있는 근거가 꼭 있어야 한다는 길, 되풀이해 맞히는 믿을 만한 능력이면 된다는 길, 나중에라도 이유를 찾을 수 있으면 된다는 길이 있어요.</li>
+</ul>
+<p>※ 바칼로레아 문항은 일반 질문이라 ③⑤를 일부러 비워 두며, 그 칸은 문제 제기와 보라 카드가 채워요.</p>
+<p><strong>보라 카드</strong> 〔민지〕 내가 ‘감’으로 고른 답 가운데 무엇이 쌓인 공부에서 나왔고 무엇이 운이었을까? — C · 성찰 · 분석하기 · 루브릭 4/5(①②④⑤)</p>
+</section>
+<section class="box bench"><h2>⑧ 논술 작업대</h2><h3>정의, 반례, 재정의를 되풀이하기</h3>
+<p>이번에 익힌 M4 반례 찾기는 논술에서 정의를 먼저 세우고, 반례로 시험하고, 다시 고쳐 세우는 전개로 이어져요.</p>
+<ol>
+<li>정의 세우기: “앎이란 근거가 있고 참인 믿음이다.” 철학에서 흔히 ‘정당화된 참인 믿음’이라고 부르는 정의예요.</li>
+<li>반례로 시험하기: “그러나 계산 실수 두 개가 서로 상쇄되어 정답에 이른 풀이를 보자. 근거도 있고 답도 참이지만, 우리는 그것을 안 것이라 하지 않는다.” 반례 문단은 ‘그러나 다음 경우를 보자’처럼 짧게 열고, 정의의 어느 조건을 겨냥하는지 밝혀요.</li>
+<li>재정의하기: “그렇다면 앎에는 우연이 아니라 바로 그 근거 때문에 참에 닿았다는 조건이 더 필요하다.”</li>
+<li>다시 시험하기: 고친 정의에도 반례를 대 보세요. 아는 얼굴을 알아보는 일처럼 이유를 대지 못하는 앎은 이 정의를 통과할까요?</li>
+</ol>
+<p>재정의는 결론이 아니라 다음 반례를 부르는 자리예요. 정의가 두세 번 고쳐지는 과정이 그대로 본론의 뼈대가 돼요. 마지막 정의를 무엇으로 할지는 여러분 몫이에요.</p>
+</section>
+<section class="box yourturn"><h2>⑨ 너의 질문 차례</h2><p><strong>다른 형식의 문항</strong> — [텍스트 해설형] 다음 글을 해설하시오. 저자의 사상에 대한 지식은 필요하지 않다. 글을 정확히 이해하여 글이 다루는 문제를 밝히면 된다. (제시문: ⑥의 폴라니 제시문)</p>
+<p>9회에서 기초를 익힌 텍스트 해설을 떠올리며, 얼굴 예시와 몽타주 예시가 글의 주장에서 각각 어떤 일을 하는지부터 찾아보세요.</p>
+<p>‘그냥 알 것 같았던’ 순간을 Q0로 적어 보세요. 그 질문이 기대고 있는 정의를 하나 세운 뒤, M4로 그 정의에 맞지 않는 반례를 대어 고쳐 쓰면 돼요. 그다음 아래 칸에 ✔ 또는 ✕를 적어 보세요.</p>
+<table>
+<thead>
+<tr>
+<th>질문ON 루브릭</th>
+<th>내 Q0</th>
+<th>고쳐 쓴 질문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 사실 확인을 넘어서는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>□/5</td>
+<td>□/5</td>
+</tr>
+</tbody></table>
+<h3>블룸 6칸 워크시트</h3>
+<p>‘감과 앎’을 주제로 기억하기부터 창조하기까지 한 칸씩 질문을 채우며 사다리를 직접 올라 보세요.</p>
+<table>
+<thead>
+<tr>
+<th>블룸</th>
+<th>질문을 쓰는 실마리</th>
+<th>내 질문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>기억하기 · REMEMBER</td>
+<td>확률이나 시험 형식처럼 조사하면 답이 나오는 것</td>
+<td></td>
+</tr>
+<tr>
+<td>이해하기 · UNDERSTAND</td>
+<td>‘감’, ‘찍음’, ‘앎’의 뜻 풀이</td>
+<td></td>
+</tr>
+<tr>
+<td>적용하기 · APPLY</td>
+<td>멈춘 시계 사고실험을 내 시험지에 대 보기</td>
+<td></td>
+</tr>
+<tr>
+<td>분석하기 · ANALYZE</td>
+<td>맞힌 것, 근거 있는 것, 아는 것 가르기</td>
+<td></td>
+</tr>
+<tr>
+<td>평가하기 · EVALUATE</td>
+<td>말로 못 하는 앎의 값 따져 보기</td>
+<td></td>
+</tr>
+<tr>
+<td>창조하기 · CREATE</td>
+<td>찍음과 감을 가려낼 나만의 오답 표시법 설계하기</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘그 정의에 들어맞지 않는 경우는 없을까요?’ 같은 발문이 왔다면, 그건 M 몇 번 기술일까요? 내가 받은 발문에도 번호를 붙여 보세요.</p>
+<p><strong>연결 교과</strong> — 논리와 사고(논증과 오류), 확률과 통계, 인간과 철학(인식론), 인간과 심리(직관과 판단)</p>
+<p><strong>다음 주 예고</strong> — 떡볶이를 시키다 결제 버튼 위의 작은 글씨를 캡처해 둔 서윤이 다음 날 “결제 화면에 붙은 ‘부가세 포함’은 뭐야?”라고 물어요.</p>
+</section>
+<section class="teacher"><h2>⑩ 교사용 노트(부록)</h2><ul>
+<li>모의평가 직후 오답 정리 시간과 연결해, 학생이 자기 답안에 ‘풀이’, ‘감’, ‘찍음’ 표시를 해 보게 한다.</li>
+<li>점수나 등급을 공개하게 하지 말고, 점수를 학생의 능력과 같은 것으로 말하지 않을 것.</li>
+<li>⑥의 제시문은 요지를 풀어 옮긴 글이므로 원문 인용으로 소개하지 않을 것.</li>
+<li>운세, 초능력처럼 범위 밖 질문이 나오면 판정하지 말고 ‘되풀이해 확인할 수 있는가’라는 기준 질문으로 되돌린다.</li>
+<li>⑨ 후속 발문 예시 답: M4 반례 찾기(정의에 들어맞지 않는 사례를 찾게 함).</li>
+</ul>
+</section></article></main></body></html>

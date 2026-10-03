@@ -1,0 +1,322 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>물음표 공방 제11회</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"><style>
+:root{
+  --ink:#1f2430; --muted:#5f6675; --line:#d9dde5; --paper:#ffffff;
+  --yellow:#fff4cc; --yellow-b:#e2b100; --green:#e5f3e8; --green-b:#3f9a5a;
+  --blue:#e4eefc; --blue-b:#2f6fd0; --purple:#efe7fb; --purple-b:#7b4cc2;
+  --voice:#f6f1e8; --voice-b:#a07a3c; --bench:#eef0f4; --bench-b:#5d6577; --pink:#fde8ec;
+}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0; color:var(--ink); background:var(--paper);
+  font-family:'Nanum Myeongjo','NanumMyeongjo',serif; font-size:10.4pt; line-height:1.78;}
+main{max-width:176mm; margin:0 auto; padding:0 16px}
+/* 어절 기준 자간 맞춤: 양쪽 정렬 + 어절 단위 줄 나눔 */
+p, li, td, th, blockquote{text-align:justify; text-justify:inter-word; word-break:keep-all; overflow-wrap:break-word; line-break:strict; hanging-punctuation:none}
+p{margin:0 0 .55em}
+h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Variable',sans-serif}
+.kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
+.meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
+h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
+section{margin:0 0 6px}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
+.box h2{margin-top:2px}
+.yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
+.green{background:var(--green); border-left:5px solid var(--green-b)}
+.voice{background:var(--voice); border-left:5px solid var(--voice-b)}
+.blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
+.bench{background:var(--bench); border-left:5px solid var(--bench-b)}
+.yourturn{border:1.5px dashed var(--bench-b)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
+.blue strong{font-family:'Pretendard',sans-serif}
+.blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
+th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
+th{background:rgba(0,0,0,.045); font-weight:700}
+tr{break-inside:avoid}
+blockquote{margin:6px 0; padding:4px 12px; border-left:3px solid var(--line); color:#3d4352}
+ul,ol{margin:4px 0 8px; padding-left:1.3em}
+li{margin:0 0 3px}
+code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
+hr{border:0; border-top:1px solid var(--line); margin:12px 0}
+.ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
+@media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep11" style="zoom:0.95"><p class="kicker">물음표 공방 · 1학기 · 제11회</p><h1>육상 클럽 선수가 계주에 나가면 반칙일까</h1><p class="meta">게재 권장 6월 1주 · 핵심 개념: 정의(핵심), 평등(확장), 몸(확장) · 최종 문항: N 당위형 · 중점 기술: M8 조건 붙이기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>화요일 6교시 학급회의 시간이었다. 서기인 하린은 칠판에 ‘반 대항 계주 선수 6명’이라고 쓰고, 첫 추천을 받은 가은의 이름을 적었다. 가은은 학교스포츠클럽 육상부였다. 마커 뚜껑을 닫기도 전에 뒷줄에서 누군가 중얼거렸다.</p>
+<p>“육상 클럽 애가 계주 뛰는 거, 반칙 아니야?”</p>
+<p>웃음 반, 맞장구 반의 웅성거림이 번졌다. 하린은 반장이 나눠 준 체육대회 요강을 끝까지 훑었다. 클럽 선수의 출전을 막는 조항은 없었다. 규칙에 없으면 반칙이 아니다. 하린이 그렇게 말하려는 순간 가은이 먼저 입을 열었다.</p>
+<p>“그럼 나는 체육대회에서 아무것도 하지 말라는 거야?”</p>
+<p>교실이 조용해졌다. 맨 앞줄의 로아가 종목별 명단을 손가락으로 짚어 내려가다 멈췄다. 지난주 다리를 다쳐 깁스를 한 수아의 이름은 처음부터 어느 칸에도 없었다.</p>
+<p>“수아한테는 아무도 안 물어봤네.”</p>
+<p>로아의 혼잣말에 수아가 괜찮다는 듯 어깨를 으쓱했다. 하린은 요강을 접었다. 규칙에는 아무 문제가 없었다. 그런데 이 교실의 무언가는 분명히 공정하지 않았다. 목요일 7교시, 하린은 세미나실 화이트보드 맨 아래에 노란 포스트잇을 붙였다. 뒷줄에서 들은 문장 그대로였다.</p>
+</section>
+<section class="box yellow"><h2>② 노란 카드: 질문ON 진단</h2><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>질문ON 진단</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>질문</td>
+<td>육상 클럽 애가 계주 뛰는 거, 반칙 아니야?</td>
+</tr>
+<tr>
+<td>꼴</td>
+<td>E 존재·성격형</td>
+</tr>
+<tr>
+<td>깊이 배지</td>
+<td>표면적 호기심</td>
+</tr>
+<tr>
+<td>블룸 배지</td>
+<td>평가하기 · EVALUATE</td>
+</tr>
+<tr>
+<td>① 사실 확인을 넘어서는가 — 단답으로 끝나지 않는 질문인가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가 — 배운 내용·다른 개념과 관계를 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가 — ‘왜’, ‘어떻게’로 원리를 파고드는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가 — ‘만약 ~라면’, 비교·평가를 시도하는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가 — 자신의 이해·경험을 성찰하며 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>1/5</td>
+</tr>
+</tbody></table>
+<p>요강에 금지 조항이 없는데도 ‘반칙 같다’는 느낌이 남는 건, 이 질문이 조사가 아니라 ‘반칙’이라는 낱말의 뜻을 따져야 끝나는 E이기 때문이에요. 그래서 ①은 켜졌고, 판정을 요구하니 블룸은 평가하기지만 깊이는 아직 표면이에요. 꼴과 깊이는 서로 다른 축이고, 교실에서 툭 튀어나온 표면 질문이야말로 좋은 출발점이에요.</p>
+</section>
+<section class="box green"><h2>③ 질문 쪼개기(초록 카드)</h2><p>핵심어별 쪼개기는 이번이 마지막이에요. Q0의 ‘육상 클럽 애’, ‘계주’, ‘반칙’에 동그라미를 치고 낱말마다 질문을 달았어요.</p>
+<table>
+<thead>
+<tr>
+<th>꼴 코드</th>
+<th>하위 질문</th>
+<th>누가 냈나</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F</td>
+<td>다른 학교나 대회는 선수 출전을 어떻게 정해?</td>
+<td>서윤(‘육상 클럽 애’)</td>
+</tr>
+<tr>
+<td>W</td>
+<td>사람들은 왜 이길 수 없는 경기를 불공정하다고 느낄까?</td>
+<td>채아(‘계주’)</td>
+</tr>
+<tr>
+<td>★ C</td>
+<td>‘공정한 경쟁’이 정확히 뭐야?</td>
+<td>로아(‘반칙’)</td>
+</tr>
+<tr>
+<td>N</td>
+<td>잘하는 사람한테 핸디캡을 줘야 해?</td>
+<td>서윤(‘육상 클럽 애’)</td>
+</tr>
+<tr>
+<td>V</td>
+<td>선수 한 명 넣고 이기는 게 나아, 다 같이 뛰고 지는 게 나아?</td>
+<td>하린(‘계주’)</td>
+</tr>
+</tbody></table>
+<p>★는 하린이 골랐어요. “정의부터 하자. ‘반칙’이 뭔지 모르면 나머지 질문도 다 흔들려.” 서윤의 핸디캡 질문(N)도 끌렸지만, 핸디캡을 줄지 말지는 공정한 경쟁이 무엇인지 정한 다음에야 따질 수 있다는 이유였어요. 이기고 싶은 마음이 담긴 자기 V도 잠시 내려놓았지요. 고른 질문 옆의 꼴, 깊이, 블룸, 기술 라벨 네 개는 5회부터 그랬듯 학생이 직접 적어요. 하린이 이 질문을 어떻게 고쳐 썼는지는 탐구 일지 첫 장면에 있어요.</p>
+</section>
+<section class="journal"><h2>④ 탐구 일지</h2><p>목요일 7교시, 하린은 지난주 파란 카드 ‘무엇이 어떤 것을 예술 작품으로 만드는가?’ 옆에 ‘공정한 경쟁 = 같은 조건’이라고 썼다.</p>
+<p>“같은 조건을 만들려면 가은이를 빼야 하잖아. 그럼 가은이한테도 그게 같은 조건이야?”</p>
+<p>로아의 말에 하린은 마커를 내려놓았다. 조건을 맞추려다 사람 하나를 지워 버린 셈이었다. 하린은 초록 카드를 ‘공정하다는 것은 조건이 같다는 뜻인가?’로 고쳐 올리고 옆에 ‘C, 탐구, 분석하기, M1’을 직접 적었다. 선생님은 같은 조건이 오히려 어긋나 보이는 사례를 모아 보라는 말만 남겼다.</p>
+<p>“골프에는 핸디캡이 있잖아. 실력이 낮을수록 타수를 더 빼 줘. 그리고 프랑스에서는요, 내가 다닌 중학교 계주는 혼성이었고 클럽 선수는 한 팀에 한 명까지만 넣었어.”</p>
+<p>채아가 조심스럽게 손을 들었다.</p>
+<p>“내 얘기 하나 해도 돼? 작년 우리 반은 깁스를 한 애가 응원단장을 맡았는데, 그해 응원 참여는 우리 반이 제일 높았어.”</p>
+<p>로아가 카드를 ‘다른 사람을 다르게 대하는 것이 오히려 공정할 때가 있는가?’로 바꿔 붙이고 하린을 돌아보았다.</p>
+<p>“반례 하나면 끝이라며?”</p>
+<p>하린은 웃음을 참으며 그 칸 옆에 ‘M4’를 적었다. 끝난 것은 하린의 첫 정의였다.</p>
+<p>금요일 쉬는 시간, 둘은 당사자에게 물었다. 가은은 빼 달라는 말보다 ‘네가 뛰면 재미없잖아’라는 말이 더 서운했다고 했다. 수아는 못 뛰는 건 괜찮지만 없는 사람 취급은 싫다고 했다. 받아 적던 로아의 펜이 멈췄다. 자기도 ‘똑같이 해 줘’와 ‘나는 사정이 달라’를 그때그때 골라 써 왔다.</p>
+<p>그날 점심 모임, 하린은 급식실 구석 자리에서 선생님이 두고 간 복사물을 펼쳤다. 아리스토텔레스는 동등하지 않은 이들에게 동등한 몫을 줄 때도 다툼이 생긴다고 했고, 영은 차이를 무시한 ‘중립’이 이미 있던 불리함을 되풀이한다고 했다. 전날 7교시 내내 문제집을 풀며 귀만 열어 두었던 민지가 마지막 장을 집어 들고 말했다.</p>
+<p>“그래서 뭐, 결과 맞추려고 사람마다 다르게 대하자고? 난 하이에크 편. 그러기 시작하면 법 앞의 평등이 깨져.”</p>
+<p>로아는 ‘같은 규칙’과 ‘공정’ 사이에 화살표를 긋고 물음표를 달았다. 카드는 ‘같은 규칙만으로 공정해질 수 있는가?’가 되었고, 하린은 두 개념의 관계를 묻는 질문이라며 ‘M12’라고 이름 붙였다.</p>
+<p>둘은 세 가지 규칙안을 반별 명단에 대 보았다. 선수를 막으면 가은이 빠졌고, 제한을 없애면 클럽 선수가 셋인 반이 독주했다(동아리 자체 조사). 종례 시간에 다시 모인 반은 ‘선수 1명 이하, 전원 한 구간씩 참여’를 2학년 계주 규칙안으로 올리기로 했다. 가은은 마지막 주자를 맡았고, 수아는 스스로 응원단장을 하겠다고 했다. ‘전원’에는 처음부터 예외가 하나 있었던 셈이다. 그날 밤 단톡방에 민지의 메시지가 떴다.</p>
+<p>‘이게 똑같이 대한 걸까, 다르게 대한 걸까?’</p>
+<p>하린은 한참 뒤에야 답 대신 질문 하나를 올렸다. ‘공정하려면 모두를 똑같이 대해야 하는가?’ 그러고는 ‘모두’와 ‘똑같이’에 빨간 동그라미를 친 캡처를 이어 보내며 ‘M8’이라고 덧붙였다. 두 낱말 가운데 하나만 빼도 전혀 다른 질문이 되었다.</p>
+</section>
+<section class="ladder"><h2>⑤ 질문 사다리</h2><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>질문</th>
+<th>꼴</th>
+<th>깊이</th>
+<th>블룸</th>
+<th>바꾼 기술</th>
+<th>계기</th>
+<th>바꾼 사람·이름 붙인 사람</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Q0 · 노란 카드</td>
+<td>육상 클럽 애가 계주 뛰는 거, 반칙 아니야?</td>
+<td>E</td>
+<td>표면</td>
+<td>평가하기</td>
+<td>—</td>
+<td>학급회의 뒷줄의 중얼거림과 가은의 ‘그럼 나는 아무것도 하지 말라는 거야?’</td>
+<td>〔반 친구 물음·하린 옮김〕</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>공정하다는 것은 조건이 같다는 뜻인가?</td>
+<td>C</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M1 핵심어 정의하기</td>
+<td>③에서 고른 C(‘정의부터 하자’), 같은 조건을 만들려면 가은을 빼야 한다는 로아의 지적</td>
+<td>〔하린 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>다른 사람을 다르게 대하는 것이 오히려 공정할 때가 있는가?</td>
+<td>E</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M4 반례 찾기</td>
+<td>골프 핸디캡과 리옹 중학교의 혼성 계주, 깁스를 한 응원단장 이야기</td>
+<td>〔로아 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>같은 규칙만으로 공정해질 수 있는가?</td>
+<td>R</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M12 관계 묻기</td>
+<td>아리스토텔레스의 비례적 평등과 영 읽기, 점심 모임에서 하이에크 편을 맡은 민지</td>
+<td>〔로아 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q4 · 파란 카드</td>
+<td>공정하려면 모두를 똑같이 대해야 하는가?</td>
+<td>N</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M8 조건 붙이기</td>
+<td>‘선수 1명 이하, 전원 한 구간씩 참여’ 규칙안과 민지의 ‘똑같이 대한 걸까, 다르게 대한 걸까?’</td>
+<td>〔하린 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>보라 카드</td>
+<td>내가 ‘똑같이 해 줘’라고 말할 때와 ‘나는 사정이 달라’라고 말할 때, 기준은 같았을까?</td>
+<td>E</td>
+<td>성찰</td>
+<td>평가하기</td>
+<td>M13 나에게로 돌리기</td>
+<td>수아의 ‘없는 사람 취급은 싫어’를 자기 경험에 비춰 봄</td>
+<td>〔로아 바꿈·로아 명명〕</td>
+</tr>
+</tbody></table>
+<p><strong>만든 것</strong> — 당사자 인터뷰 메모(가은, 수아), 규칙안 세 가지 비교표, 2학년 계주 규칙안</p>
+</section>
+<section class="box voice"><h2>⑥ 사상가의 목소리</h2><h3>아리스토텔레스 — 비례적 평등</h3>
+<p>아리스토텔레스는 『니코마코스 윤리학』 5권 3장에서 분배의 정의를 비례적 평등으로 보았어요. 동등한 이에게는 동등한 몫을, 동등하지 않은 이에게는 동등하지 않은 몫을 주는 것이지요. “다툼과 불평은 바로 여기서 생긴다. 동등한 사람들이 동등하지 않은 몫을, 또는 동등하지 않은 사람들이 동등한 몫을 갖거나 배분받을 때”(원문을 직접 옮김). 다만 몫을 나누는 기준인 ‘가치’를 무엇으로 볼지는 사람들이 서로 다르게 주장한다고 덧붙였어요.</p>
+<h3>아이리스 매리언 영 — 차이를 무시한 중립</h3>
+<p>영은 『차이의 정치와 정의』(1990)에서, 모두에게 같은 기준을 적용하는 ‘중립적’ 대우라도 그 기준이 이미 유리한 집단에 맞춰져 있으면 집단 사이의 불리함을 되풀이할 수 있다고 보았어요. 그래서 정의는 때로 차이를 지우는 대신 드러내고 고려하기를 요구한다고 했어요.</p>
+<h3>프리드리히 하이에크 — 법 앞의 평등</h3>
+<p>하이에크는 『자유헌정론』(1960) 6장에서, 사람들은 서로 다르기에 똑같이 대하면 실제 처지가 불평등해지고 같은 처지에 놓으려면 다르게 대해야 한다고 보았어요. 법 앞의 평등과 실질적 평등은 충돌하며, 자유가 요구하는 것은 법 앞의 평등이라는 것이 그의 결론이에요.</p>
+<h3>어디서 부딪힐까</h3>
+<p>세 사람 모두 ‘사람은 서로 다르다’에서 출발해요. 아리스토텔레스는 차이에 맞춘 몫을 정의로 보고, 영은 차이를 무시하는 중립을 의심하며, 하이에크는 차이를 바로잡으려는 다른 대우가 자유를 위협한다고 봐요. 쟁점은 어떤 차이를, 누가, 어떤 규칙으로 고려하느냐예요. 가은의 훈련된 몸과 수아의 다친 몸은 같은 종류의 차이일까요?</p>
+</section>
+<section class="box blue"><h2>⑦ 파란 카드와 보라 카드</h2><p><strong>공정하려면 모두를 똑같이 대해야 하는가?</strong></p>
+<p>N 당위형 (탐구 · 평가하기 · 루브릭 3/5: ①②④)</p>
+<ul>
+<li><strong>핵심 개념어</strong>: 정의는 각자가 마땅히 받아야 할 대우를 받는 상태예요. 평등은 같은 규칙을 적용하는 형식적 평등과 차이에 비례해 대하는 비례적 평등으로 나뉘어요. 몸은 타고나고 훈련되고 다치기도 하는, 사람마다 다른 출발점이에요.</li>
+<li><strong>문제 제기</strong>: 왜 같은 규칙을 적용했는데도 불공정하다는 느낌이 남을까요? 그런데 왜 다르게 대하면 곧바로 ‘특혜’라는 말이 나올까요?</li>
+<li><strong>논의 방향</strong>: ‘똑같이’를 같은 규칙으로 읽는 길, 관련 있는 차이에 비례해 대하는 길, ‘모두’의 예외를 누가 어떤 기준으로 정하는지 묻는 길이 있어요.</li>
+</ul>
+<p>※ 바칼로레아 문항은 일반 질문이라 ③⑤를 일부러 비워 두며, 그 칸은 문제 제기와 보라 카드가 채워요.</p>
+<p><strong>보라 카드</strong> 〔로아〕 내가 ‘똑같이 해 줘’라고 말할 때와 ‘나는 사정이 달라’라고 말할 때, 기준은 같았을까? — E · 성찰 · 평가하기 · 루브릭 4/5(①②④⑤)</p>
+</section>
+<section class="box bench"><h2>⑧ 논술 작업대</h2><h3>조건어로 문제를 세우고 조건부로 결론 내기</h3>
+<p>이번 회 중점 기술은 M8 조건 붙이기예요. 문항 속 ‘모두’, ‘똑같이’, ‘언제나’ 같은 조건어는 논술에서 문제 제기의 축이 돼요. 연습 문항 ‘급식은 모두에게 똑같이 나눠야 하는가?’로 세 걸음을 밟아 볼게요.</p>
+<ol>
+<li>조건어에 밑줄 긋기: ‘모두’는 예외가 하나도 없다는 뜻일까요? ‘똑같이’는 같은 양일까요, 같은 배부름일까요?</li>
+<li>조건어로 문제 세우기: “‘똑같이’를 같은 양으로 읽으면 운동부 학생은 늘 배가 고프고, 같은 배부름으로 읽으면 누가 얼마나 배고픈지 재야 한다. 이 질문의 어려움은 바로 이 낱말에 있다.”</li>
+<li>조건부로 결론 내기: “‘똑같이’가 같은 기회를 뜻하는 한에서 급식은 똑같이 나눠야 한다. 그러나 같은 양을 뜻한다면, 몸의 차이를 지우는 그 요구는 그대로 받아들이기 어렵다.”</li>
+</ol>
+<p>조건부 결론은 얼버무리기가 아니에요. 판단이 어느 조건에서 뒤집히는지 정확히 밝히는 결론이에요. 조건어를 붙였다 뗐다 하며 판단이 바뀌는 지점을 찾고, 그 지점을 결론에 그대로 적어 보세요.</p>
+</section>
+<section class="box yourturn"><h2>⑨ 너의 질문 차례</h2><p><strong>다른 형식의 문항</strong> — [R 관계·조건형] 평등은 차이를 인정하는 것을 전제하는가?</p>
+<p>요즘 ‘이건 불공평해!’라고 느낀 순간을 Q0로 적어 보세요. 그다음 M8로 ‘모두’, ‘언제나’, ‘~만으로’ 같은 조건어를 붙이거나 떼어 고쳐 쓰고, 아래 칸에 ✔ 또는 ✕를 적어 보세요.</p>
+<table>
+<thead>
+<tr>
+<th>질문ON 루브릭</th>
+<th>내 Q0</th>
+<th>고쳐 쓴 질문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 사실 확인을 넘어서는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>□/5</td>
+<td>□/5</td>
+</tr>
+</tbody></table>
+<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘그 규칙은 언제나 통할까요?’ 같은 발문이 왔다면, 그건 M 몇 번 기술일까요? 내가 받은 발문에도 번호를 붙여 보세요.</p>
+<p><strong>연결 교과</strong> — 통합사회2(사회 정의와 불평등), 윤리와 사상(고대 그리스 윤리, 현대 정의론), 체육1(스포츠 윤리), 정치</p>
+<p><strong>다음 주 예고</strong> — 6월 모의평가 가채점지를 다시 펼친 민지가 하린에게 “감으로 찍은 게 맞았으면 그것도 아는 거야?”라고 되물어요.</p>
+</section>
+<section class="teacher"><h2>⑩ 교사용 노트(부록)</h2><ul>
+<li>체육대회 선수 선발, 학급 규칙 정하기 같은 실제 학급 활동과 연결해 학생이 만든 규칙안을 논술의 사례로 쓰게 한다.</li>
+<li>부상, 장애, 체격 같은 몸의 차이를 다룰 때 특정 학생을 사례로 지목하지 않을 것.</li>
+<li>성별 구분 경기나 장애인 스포츠 등급처럼 범위 밖의 실제 논쟁이 나오면 특정 선수나 집단에 대한 평가로 흐르지 않게 하고, ‘무엇을 관련 있는 차이로 볼 것인가’라는 기준 질문으로 되돌린다.</li>
+<li>⑨ 후속 발문 예시 답: M8 조건 붙이기(조건어 ‘언제나’를 붙임).</li>
+</ul>
+</section></article></main></body></html>
