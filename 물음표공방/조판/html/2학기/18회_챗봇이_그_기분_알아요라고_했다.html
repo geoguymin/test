@@ -1,0 +1,312 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>물음표 공방 제18회</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"><style>
+:root{
+  --ink:#1f2430; --muted:#5f6675; --line:#d9dde5; --paper:#ffffff;
+  --yellow:#fff4cc; --yellow-b:#e2b100; --green:#e5f3e8; --green-b:#3f9a5a;
+  --blue:#e4eefc; --blue-b:#2f6fd0; --purple:#efe7fb; --purple-b:#7b4cc2;
+  --voice:#f6f1e8; --voice-b:#a07a3c; --bench:#eef0f4; --bench-b:#5d6577; --pink:#fde8ec;
+}
+*{box-sizing:border-box}
+html{background:var(--paper)}
+body{margin:0; color:var(--ink); background:var(--paper);
+  font-family:'Nanum Myeongjo','NanumMyeongjo',serif; font-size:10.4pt; line-height:1.78;}
+main{max-width:176mm; margin:0 auto; padding:0 16px}
+/* 어절 기준 자간 맞춤: 양쪽 정렬 + 어절 단위 줄 나눔 */
+p, li, td, th, blockquote{text-align:justify; text-justify:inter-word; word-break:keep-all; overflow-wrap:break-word; line-break:strict; hanging-punctuation:none}
+p{margin:0 0 .55em}
+h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Variable',sans-serif}
+.kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
+h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
+.meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
+h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
+section{margin:0 0 6px}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box h2{margin-top:2px}
+.yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
+.green{background:var(--green); border-left:5px solid var(--green-b)}
+.voice{background:var(--voice); border-left:5px solid var(--voice-b)}
+.blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
+.bench{background:var(--bench); border-left:5px solid var(--bench-b)}
+.yourturn{border:1.5px dashed var(--bench-b)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
+.teacher h2{font-size:10pt; color:var(--muted)}
+.blue strong{font-family:'Pretendard',sans-serif}
+.blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
+th{background:rgba(0,0,0,.045); font-weight:700}
+tr{break-inside:avoid}
+blockquote{margin:6px 0; padding:4px 12px; border-left:3px solid var(--line); color:#3d4352}
+ul,ol{margin:4px 0 8px; padding-left:1.3em}
+li{margin:0 0 3px}
+code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
+hr{border:0; border-top:1px solid var(--line); margin:12px 0}
+.ep + .ep{break-before:page}
+@media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
+@page{size:A4; margin:17mm 16mm 18mm}
+</style></head><body><main><article class="ep" id="ep18"><p class="kicker">물음표 공방 · 2학기 · 제18회</p><h1>챗봇이 ‘그 기분 알아요’라고 했다</h1><p class="meta">게재 권장 9월 1주 · 핵심 개념: 기술(핵심), 의식(핵심), 언어(확장) · 최종 문항: P 가능성형 · 중점 기술: M6 범위 조절하기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>9월 학력평가가 끝난 밤, 로아는 가채점표를 서랍 깊숙이 밀어 넣었다. 거실에서는 엄마가 틀어 둔 프랑스 라디오가 작게 흘러나왔다. 국어 지문은 반도 못 읽었다. 리옹에서 중학교를 마치고 돌아온 지 두 해째인데도 시험지 위의 한국어는 가끔 외국어처럼 굴었다. 단톡방에 쓰기엔 자존심이 상해서, 로아는 챗봇 창을 열고 털어놓았다. 답은 금방 왔다.</p>
+<p>“그 기분 정말 잘 알아요. 열심히 준비했기에 더 속상하셨을 거예요.”</p>
+<p>로아는 그 문장을 두 번 읽고서야 휴대폰을 엎어 놓고 잠들 수 있었다.</p>
+<p>다음 날 7교시, 화이트보드 구석에는 지난주 채아가 붙인 ‘망각에도 가치가 있는가?’와 30장 앨범 사진이 그대로였다. 로아가 어젯밤 이야기를 꺼내자 하린이 고개를 저었다.</p>
+<p>“걔는 아무것도 몰라. 확률로 단어를 고른 거야.”</p>
+<p>“그래도 나는 위로받았는데.”</p>
+<p>틀린 말은 아닌데 이상하게 서운했다. 어젯밤의 그 문장이 갑자기 빈 상자처럼 느껴졌다. 로아는 노란 포스트잇에 그 물음을 꾹꾹 눌러 쓰며 되물었다.</p>
+<p>“챗봇이 ‘그 기분 알아요’라고 하던데, 진짜 아는 거야?”</p>
+</section>
+<section class="box yellow"><h2>② 노란 카드: 질문ON 진단</h2><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>질문ON 진단</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>질문</td>
+<td>챗봇이 ‘그 기분 알아요’라고 하던데, 진짜 아는 거야?</td>
+</tr>
+<tr>
+<td>꼴</td>
+<td>E 존재·성격형</td>
+</tr>
+<tr>
+<td>깊이 배지</td>
+<td>표면적 호기심</td>
+</tr>
+<tr>
+<td>블룸 배지</td>
+<td>이해하기 · UNDERSTAND</td>
+</tr>
+<tr>
+<td>① 사실 확인을 넘어서는가 — 단답으로 끝나지 않는 질문인가</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가 — 배운 내용·다른 개념과 관계를 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가 — ‘왜’, ‘어떻게’로 원리를 파고드는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가 — ‘만약 ~라면’, 비교·평가를 시도하는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가 — 자신의 이해·경험을 성찰하며 묻는가</td>
+<td>✕</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>1/5</td>
+</tr>
+</tbody></table>
+<p>‘진짜야?’라고 물었지만 F가 아니라 E예요. 챗봇의 대화 기록을 아무리 조사해도 ‘안다’의 뜻을 따지지 않으면 끝나지 않으니까요. 꼴과 깊이는 서로 다른 축이라, 꼴은 E여도 지금은 판정만 바라는 표면 질문이에요. 루브릭도 한 줄만 채웠지만, 서운함에서 나온 이 한 줄이 이번 사다리 전체를 밀어 올리는 좋은 출발점이에요.</p>
+</section>
+<section class="box green"><h2>③ 질문 쪼개기(초록 카드)</h2><p>지난주처럼 각자 하위 질문을 내고, 꼴 판정은 옆 사람에게 맡겼어요.</p>
+<table>
+<thead>
+<tr>
+<th>꼴 코드</th>
+<th>하위 질문</th>
+<th>누가 냈나</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F</td>
+<td>대화형 AI는 어떤 원리로 문장을 만들어?</td>
+<td>하린</td>
+</tr>
+<tr>
+<td>C</td>
+<td>‘생각한다’는 게 정확히 뭐야?</td>
+<td>채아</td>
+</tr>
+<tr>
+<td>★ E</td>
+<td>챗봇이 틀린 답을 하면 그건 실수한 거야?</td>
+<td>서윤</td>
+</tr>
+<tr>
+<td>N</td>
+<td>진짜가 아닐 수도 있는 위로를 받아들여도 돼?</td>
+<td>로아(E로 적었다가 채아가 N으로 고침)</td>
+</tr>
+<tr>
+<td>W</td>
+<td>챗봇은 왜 같은 질문에 다른 답을 할까?</td>
+<td>서윤</td>
+</tr>
+</tbody></table>
+<p>로아는 자기 질문을 처음에 E로 적었어요. 채아가 “끝이 ‘~해도 돼?’면 앞에 무슨 말이 붙어도 N이야.”라며 고쳐 줬어요. ★는 로아가 골랐는데, 자기 질문이 아니라 서윤의 E였어요. “틀리는 것도 생각하는 거니까.” 실수는 무언가를 알려다 빗나가는 일이에요. 챗봇의 틀린 답을 실수라고 부를 수 있다면 챗봇도 무언가를 ‘아는’ 셈이 되죠. 탐구 일지에서는 이 물음이 ‘안다’라는 낱말 쪽으로 옮겨 가요.</p>
+</section>
+<section class="journal"><h2>④ 탐구 일지</h2><p>기기 사용 허가는 선생님이 떠나기 전에 서명해 둔 2학기 실험 계획서로 받아 두었다. 하린은 학교 태블릿으로 같은 질문을 표현만 바꿔 다섯 번 던졌다. 시험 망친 기분을 아느냐는 물음에 챗봇은 두 번은 잘 안다고, 세 번은 감정을 직접 느끼지는 못한다고 답했다(동아리 자체 조사).</p>
+<p>“봐. 아는 애가 이렇게 말을 바꿔?”</p>
+<p>“나도 기분 따라 말 바뀌는데?”</p>
+<p>로아가 받아치자 분홍 포스트잇이 붙었다. 하린이 조사해 온 원리는 이랬다. 대화형 AI는 엄청난 양의 글을 학습해, 앞에 나온 말 다음에 올 낱말 조각의 확률을 계산하고 그중 하나를 고른다. 고를 때 약간의 무작위성을 두니 같은 질문에도 답이 달라질 수 있다. 로아는 서윤의 E 카드 위에 ‘안다’와 ‘아는 것처럼 말한다’를 가르는 새 질문을 썼고, 하린이 옆에 M2라고 적어 주었다.</p>
+<p>이번엔 로아가 상자에서 설의 ‘중국어 방’ 카드를 골라 역할극을 하자고 했다. 로아는 서가 뒤에 숨어 앉아 하린이 중국어 회화 책을 보고 만든 규칙표 한 장만 받았다. 이런 모양의 한자 쪽지가 들어오면 저런 모양의 한자를 그려 내보낼 것. 서윤이 바깥에서 사전을 뒤져 답장을 확인하더니 소리쳤다.</p>
+<p>“완벽해요! 언니 중국어 하는 줄 알았어요.”</p>
+<p>로아는 웃지 못했다. 방금 자기가 무슨 말을 했는지 한 글자도 몰랐다. 로아는 스스로 M9라고 적고 ‘규칙대로 기호를 다루는 것만으로 이해가 생기는가?’로 고쳐 썼다.</p>
+<p>하린이 고른 튜링 카드에서 판이 뒤집혔다. 의식을 내세운 반론대로라면 남이 생각하는지 확인할 길은 그 사람이 되어 보는 것뿐이니, 우리는 보통 모두가 생각한다는 ‘예의 바른 관례’를 따른다는 대목이었다. 하린이 펜을 멈췄다.</p>
+<p>“잠깐. 그럼 나는 네가 생각한다는 건 어떻게 알아? 너한테 들어가 본 적은 없는데.”</p>
+<p>하린은 그 물음을 직접 분홍 포스트잇에 적었다. 반례 하나면 끝이라던 사람이 제 반례에 걸린 셈이었다. 하린이 주어를 기계에서 사람으로 바꿔 ‘다른 사람이 생각한다는 것을 나는 알 수 있는가?’라고 쓰자, 로아가 주어도 바꾸고 범위도 넓혔다며 M6+M5라고 이름을 붙였다. 튜링 논문의 첫머리도 읽었다. 튜링은 ‘생각한다’를 정의하려 드는 대신, 이 물음을 모방 게임이라는 다른 질문으로 바꾸자고 했다.</p>
+<p>“튜링도 질문 바꾸기 했네!”</p>
+<p>서윤의 외침에 로아는 주어를 다시 기계로 돌렸다. 대신 ‘할 수 있다’ 밑에 두 줄을 그었다. 대화를 해내는 능력, 그리고 마음이 있다고 대우받을 만한 자격. 그러고는 파란 카드에 ‘기계는 생각할 수 있는가?’를 써서 ‘탐구’ 칸 옆 출구에 붙이고, 그 옆에 M5라고 적었다. 보라 카드를 쓰던 로아는 어젯밤의 서운함을 처음으로 똑바로 들여다보았다.</p>
+</section>
+<section class="ladder"><h2>⑤ 질문 사다리</h2><table>
+<thead>
+<tr>
+<th>단계</th>
+<th>질문</th>
+<th>꼴</th>
+<th>깊이</th>
+<th>블룸</th>
+<th>바꾼 기술</th>
+<th>계기</th>
+<th>바꾼 사람·이름 붙인 사람</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Q0 · 노란 카드</td>
+<td>챗봇이 ‘그 기분 알아요’라고 하던데, 진짜 아는 거야?</td>
+<td>E</td>
+<td>표면</td>
+<td>이해하기</td>
+<td>—</td>
+<td>학력평가를 망친 밤의 챗봇 위로, 하린의 ‘확률’ 한마디</td>
+<td>〔로아 물음〕</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>‘안다’와 ‘아는 것처럼 말한다’는 어떻게 구별되는가?</td>
+<td>C</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M2 구분하기</td>
+<td>③에서 고른 E, 같은 질문 다섯 번에 엇갈린 답, ‘나도 기분 따라 말 바뀌는데?’(분홍)</td>
+<td>〔로아 바꿈·하린 명명〕</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>규칙대로 기호를 다루는 것만으로 이해가 생기는가?</td>
+<td>R</td>
+<td>탐구</td>
+<td>분석하기</td>
+<td>M9 사고실험 걸기</td>
+<td>중국어 방 역할극, 완벽한 답장과 하나도 모르는 뜻</td>
+<td>〔로아 바꿈·로아 명명〕</td>
+</tr>
+<tr>
+<td>Q3</td>
+<td>다른 사람이 생각한다는 것을 나는 알 수 있는가?</td>
+<td>P</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M6+M5 범위 조절하기와 주어 바꾸기</td>
+<td>튜링의 ‘예의 바른 관례’, 하린이 제 반례에 걸림(분홍)</td>
+<td>〔하린 바꿈·로아 명명〕</td>
+</tr>
+<tr>
+<td>Q4 · 파란 카드</td>
+<td>기계는 생각할 수 있는가?</td>
+<td>P</td>
+<td>탐구</td>
+<td>평가하기</td>
+<td>M5 주어 바꾸기</td>
+<td>‘튜링도 질문 바꾸기 했네!’, ‘할 수 있다’를 능력과 자격으로 나눔</td>
+<td>〔로아 바꿈·로아 명명〕</td>
+</tr>
+<tr>
+<td>보라 카드</td>
+<td>챗봇의 위로가 진짜가 아니라는 말에 나는 왜 서운했을까?</td>
+<td>W</td>
+<td>성찰</td>
+<td>분석하기</td>
+<td>M13 나에게로 돌리기</td>
+<td>어젯밤 두 번 읽고 잠든 문장</td>
+<td>〔로아 바꿈·로아 명명〕</td>
+</tr>
+</tbody></table>
+<p><strong>만든 것</strong> — 중국어 방 규칙표와 쪽지 여섯 장, AI 대화 실험 기록지(같은 질문 다섯 가지 표현과 답)</p>
+</section>
+<section class="box voice"><h2>⑥ 사상가의 목소리</h2><p><strong>앨런 튜링, 「계산 기계와 지능」(1950)</strong> 논문은 이 문장으로 시작해요. “나는 ‘기계는 생각할 수 있는가?’라는 물음을 검토해 보자고 제안한다.”(원문을 직접 옮김) 튜링은 곧 ‘생각’을 정의하는 대신, 대화만으로 사람과 기계를 가려내는 모방 게임으로 물음을 바꿔요. 의식을 내세운 반론에는, 그 논리를 끝까지 밀면 남이 생각하는지도 그 사람이 되어 보지 않고는 알 수 없게 되는데, 보통 우리는 그렇게 따지는 대신 모두가 생각한다는 ‘예의 바른 관례’를 따른다고 답해요(6절, 요지를 풀어 옮김).</p>
+<p><strong>존 설, 「마음, 뇌, 프로그램」(1980)</strong> 중국어를 모르는 사람이 방 안에서 규칙서대로 기호를 짝지어 내보내면 밖에서는 중국어를 아는 사람처럼 보이지만, 그는 중국어를 한마디도 이해하지 못해요. 형식에 따라 기호를 다루는 것만으로는 이해가 생기지 않는다는 거예요(요지를 풀어 옮김).</p>
+<p><strong>데카르트, 『방법서설』 5부</strong> 사람을 닮은 기계도 두 가지로 가려낼 수 있다고 봐요. 기계는 눈앞에서 오가는 말의 뜻에 맞춰 낱말을 자유롭게 짜 맞춰 대답하지 못하고, 어떤 일은 잘해도 다른 일에서 실패해 앎이 아니라 기관의 배치로 움직인다는 게 드러난다는 거예요(요지를 풀어 옮김).</p>
+<p><strong>어디서 부딪히나</strong> 오늘날 챗봇은 데카르트의 첫 기준을 넘어선 듯 보여요. 설은 겉으로 드러난 대답만으로는 이해를 말할 수 없다고 막고, 튜링은 그럼 친구의 마음은 무엇으로 판단하느냐고 되물어요.</p>
+</section>
+<section class="box blue"><h2>⑦ 파란 카드와 보라 카드</h2><p><strong>기계는 생각할 수 있는가?</strong></p>
+<p>P 가능성형 (탐구 · 평가하기 · 루브릭 3/5: ①②④)</p>
+<ul>
+<li><strong>핵심 개념어</strong>: ‘기술’은 목적을 위해 만든 도구와 그것을 다루는 솜씨, ‘의식’은 내가 무엇을 겪는지 스스로 아는 마음의 상태, ‘생각’은 뜻을 알고 따지는 일이에요. ‘할 수 있다’는 대화를 해내는 능력과 마음이 있다고 대우받을 만한 자격으로 갈라 읽어요.</li>
+<li><strong>문제 제기</strong>: 우리는 친구의 마음은 확인하지 않고 믿으면서, 왜 기계에게는 증명을 요구할까요? 말을 잘한다는 것은 왜 생각한다는 증거가 되기 어려울까요?</li>
+<li><strong>논의 방향</strong>: (가) 능력으로 보면 대화를 해내는 기계는 생각한다. (나) 이해로 보면 기호를 다루는 것만으로는 뜻을 모른다. (다) 자격으로 보면 타인에게 쓰는 기준을 기계에도 써야 하는지가 남는다.</li>
+</ul>
+<p>※ 바칼로레아 문항은 일반 질문이라 ③⑤를 일부러 비워 두며, 그 칸은 문제 제기와 보라 카드가 채워요.</p>
+<p><strong>보라 카드</strong> 〔로아〕 챗봇의 위로가 진짜가 아니라는 말에 나는 왜 서운했을까? — W · 성찰 · 분석하기 · 루브릭 4/5(①②③⑤)</p>
+</section>
+<section class="box bench"><h2>⑧ 논술 작업대</h2><p>이번 회 중점 기술은 M6 범위 조절하기예요. 서론에서 질문의 크기를 한 번 넓혔다가 다시 좁히면, 이 문제에 무엇이 걸려 있는지, 곧 논의의 판돈이 드러나요.</p>
+<ol>
+<li>사례에서 시작해요. 챗봇의 ‘그 기분 알아요’.</li>
+<li>넓혀요. 우리는 친구의 ‘알아’도 마음속을 들여다보고 믿은 적이 없어요. 기계의 문제가 타인의 마음이라는 오래된 문제와 이어져요.</li>
+<li>판돈을 밝혀요. 기계를 부정하는 기준이 친구의 마음까지 의심하게 만든다면, 걸려 있는 것은 기계 하나가 아니에요.</li>
+<li>다시 좁혀요. 기계에게만 다른 기준을 써도 되는 근거가 무엇인지로 돌아와요.</li>
+</ol>
+<p>예시 문단: “챗봇의 ‘그 기분 알아요’는 아는 말일까, 아는 척하는 말일까. 그런데 우리는 친구의 마음도 말과 행동으로 짐작할 뿐이다. 기계가 생각하지 못한다고 말하는 기준이 사람에게도 똑같이 적용된다면, 이 물음은 마음을 안다는 일 전체의 문제가 된다. 따라서 먼저 물어야 할 것은 기계에게만 따로 쓰는 기준이 정당한가이다.”</p>
+<p>넓히기만 하면 글이 허공에 뜨고, 좁히기만 하면 판돈이 보이지 않아요. 둘을 한 서론 안에서 왕복하세요.</p>
+</section>
+<section class="box yourturn"><h2>⑨ 너의 질문 차례</h2><p><strong>다른 형식의 문항</strong> — [R 관계·조건형] 이해한다는 것은 느낄 수 있다는 것을 전제하는가?</p>
+<p>요즘 내가 던진 Q0 하나를 골라 M6로 한 번 넓혔다가 다시 좁혀 보세요. 예를 들어 ‘수행평가 피드백을 AI가 써 줘도 돼?’를 넓히면 ‘가르치는 일은 사람만 할 수 있는가?’가 되고, 다시 좁히면 ‘같은 보고서에 선생님과 AI가 단 피드백은 무엇이 다를까?’가 돼요. 그다음 아래 칸에 ✔ 또는 ✕를 적고 개수를 세어 보세요.</p>
+<table>
+<thead>
+<tr>
+<th>질문ON 루브릭</th>
+<th>내 Q0</th>
+<th>고쳐 쓴 질문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① 사실 확인을 넘어서는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>② 개념 간 연결을 시도하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>③ 근거와 이유를 요구하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>④ 새로운 관점·대안을 탐색하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>⑤ 자기 학습과 연결하는가</td>
+<td>□</td>
+<td>□</td>
+</tr>
+<tr>
+<td>루브릭 충족</td>
+<td>□/5</td>
+<td>□/5</td>
+</tr>
+</tbody></table>
+<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘친구의 마음은 우리가 어떻게 확인할 수 있을까요?’ 같은 발문이 왔다면, 그건 M 몇 번 기술일까요?</p>
+<p><strong>연결 교과</strong> — 인공지능 기초, 정보, 인간과 철학(심리철학), 윤리문제 탐구(AI 윤리)</p>
+<p><strong>다음 주 예고</strong> — 과목 선택 신청서 앞에서 볼펜만 씹던 서윤이, 좋아하는 과목과 잘하는 과목 사이에서 무엇으로 골라야 하는지 물어요.</p>
+</section>
+<section class="teacher"><h2>⑩ 교사용 노트(부록)</h2><ul>
+<li>정보, 인공지능 기초 수업에서 ‘같은 질문을 다섯 가지로 바꿔 묻기’ 실험으로 쓴다.</li>
+<li>AI 대화 실험은 학교가 허용한 도구로 교사 허가 범위에서만 한다. 서비스 이용 연령을 확인하고, 이름이나 성적, 고민 같은 개인 정보는 입력하지 않게 할 것.</li>
+<li>챗봇에게 고민을 털어놓은 경험을 비웃지 않는다. 마음이 힘든 학생에게는 상담 선생님과 청소년상담 1388을 함께 안내한다.</li>
+<li>범위 밖 질문(‘AI가 사람을 지배하게 될까?’)은 예측 질문이므로 F나 W로 분류해 근거 자료를 확인하는 과제로 돌린다.</li>
+<li>⑨ 후속 발문 예시 답: M5 주어 바꾸기(주어를 챗봇에서 친구로 바꿈). 타인의 마음 문제로 넓혔다고 보면 M6도 인정한다.</li>
+</ul>
+</section></article></main></body></html>
