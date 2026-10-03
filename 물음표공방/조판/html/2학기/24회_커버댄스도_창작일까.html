@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,9 +46,13 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
-</style></head><body><main><article class="ep" id="ep24"><p class="kicker">물음표 공방 · 2학기 · 제24회</p><h1>커버댄스도 창작일까</h1><p class="meta">게재 권장 10월 4주(10월 3주 중간고사 휴재) · 핵심 개념: 예술(핵심), 모방(확장), 독창성(확장) · 최종 문항: R 관계·조건형 · 중점 기술: M7 입장 뒤집기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>중간고사가 끝난 다음 날부터 체육관 2층 거울 앞은 축제 연습장이 됐다. 서윤의 커버댄스 팀은 아이돌 무대 영상을 0.5배속으로 틀어 놓고 손끝 각도까지 맞췄다. 바닥에는 운동화 고무 냄새가 배어 있었고, 휴대용 스피커는 같은 여덟 박자를 스무 번째 되풀이하고 있었다.</p>
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep24" style="zoom:0.97"><p class="kicker">물음표 공방 · 2학기 · 제24회</p><h1>커버댄스도 창작일까</h1><p class="meta">게재 권장 10월 4주(10월 3주 중간고사 휴재) · 핵심 개념: 예술(핵심), 모방(확장), 독창성(확장) · 최종 문항: R 관계·조건형 · 중점 기술: M7 입장 뒤집기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>중간고사가 끝난 다음 날부터 체육관 2층 거울 앞은 축제 연습장이 됐다. 서윤의 커버댄스 팀은 아이돌 무대 영상을 0.5배속으로 틀어 놓고 손끝 각도까지 맞췄다. 바닥에는 운동화 고무 냄새가 배어 있었고, 휴대용 스피커는 같은 여덟 박자를 스무 번째 되풀이하고 있었다.</p>
 <p>“하나, 둘, 셋에 고개, 넷에 손목! 다시!”</p>
 <p>팀장이 박자를 세는 사이, 옆 연습실에서 기타를 메고 나오던 자작곡 밴드 아이가 투덜거렸다.</p>
 <p>“남의 춤 따라 한 게 무슨 무대야.”</p>

@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,9 +46,13 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
-</style></head><body><main><article class="ep" id="ep8"><p class="kicker">물음표 공방 · 1학기 · 제8회</p><h1>엄마처럼은 안 살 거라던 내 입에서 엄마 말투가</h1><p class="meta">게재 권장 5월 2주 · 핵심 개념: 무의식(핵심), 책임(확장), 가족(확장) · 최종 문항: P 가능성형 · 중점 기술: M13 나에게로 돌리기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>중간고사 마지막 날 밤, 한서윤은 책상에 편지지를 펴 놓았다. 어버이날을 앞두고 동아리에서 ‘나를 돌봐 준 사람 누구에게든 쓰는 편지’를 써 오기로 한 참이었다. ‘엄마, 항상 고마워’까지 쓰고 펜이 멈췄다. 어젯밤 방문을 열고 들어온 엄마에게 서윤은 소리를 질렀다.</p>
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep8" style="zoom:0.93"><p class="kicker">물음표 공방 · 1학기 · 제8회</p><h1>엄마처럼은 안 살 거라던 내 입에서 엄마 말투가</h1><p class="meta">게재 권장 5월 2주 · 핵심 개념: 무의식(핵심), 책임(확장), 가족(확장) · 최종 문항: P 가능성형 · 중점 기술: M13 나에게로 돌리기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>중간고사 마지막 날 밤, 한서윤은 책상에 편지지를 펴 놓았다. 어버이날을 앞두고 동아리에서 ‘나를 돌봐 준 사람 누구에게든 쓰는 편지’를 써 오기로 한 참이었다. ‘엄마, 항상 고마워’까지 쓰고 펜이 멈췄다. 어젯밤 방문을 열고 들어온 엄마에게 서윤은 소리를 질렀다.</p>
 <p>“아 몰라, 나도 모르게 그랬다고!”</p>
 <p>시험 전날이라 예민했다고 넘기기엔 걸리는 일이 하나 더 있었다. 지난주 숙제를 미룬 동생에게 “너 내가 몇 번을 말했어, 응?” 하고 쏘아붙이는 순간, 말끝이 엄마와 똑같이 올라갔다. 팔에 소름이 돋았다. 서윤은 편지지를 밀어 두고 동아리 단톡방을 열었다.</p>
 <p>‘엄마처럼은 절대 안 살 거라던 사람 입에서 엄마 말투가 나오면 어떡해요…’</p>

@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,8 +46,12 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
+@page{size:A4; margin:14mm 16mm 15mm}
 </style></head><body><main><article class="ep" id="ep12"><p class="kicker">물음표 공방 · 1학기 · 제12회</p><h1>찍어서 맞힌 문제, 나는 알았던 걸까</h1><p class="meta">게재 권장 6월 2주 · 핵심 개념: 진리(핵심), 이성(핵심), 직관(확장) · 최종 문항: P 가능성형 · 중점 기술: M4 반례 찾기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>월요일 점심, 민지는 급식실 구석 자리에서 식판을 밀어 두고 6월 모의평가 가채점지와 수학 시험지를 나란히 펼쳤다. 지난주 계주 규칙을 두고 하이에크 편을 들어 하린을 몰아붙였던 바로 그 자리였다. 시험지에는 민지만 아는 표시가 있었다. 끝까지 푼 문제에는 동그라미, 감으로 고른 문제에는 세모. 결과는 얄궂었다. 세모를 친 15번은 맞았고, 여백을 까맣게 채워 끝까지 푼 13번은 마지막 줄의 계산 실수로 틀렸다.</p>
 <p>“찍은 건 아는 게 아니죠.”</p>
 <p>맞은편에서 오답 노트를 넘기던 하린이 고개도 들지 않고 말했다. 민지는 세모 위를 손톱으로 톡톡 두드렸다.</p>

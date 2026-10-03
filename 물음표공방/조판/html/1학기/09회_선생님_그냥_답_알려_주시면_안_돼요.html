@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,9 +46,13 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
-</style></head><body><main><article class="ep" id="ep9"><p class="kicker">물음표 공방 · 1학기 · 제9회</p><h1>선생님, 그냥 답 알려 주시면 안 돼요?</h1><p class="meta">게재 권장 5월 3주 · 핵심 개념: 이성(핵심), 교육(확장), 자유(확장) · 최종 문항: P 가능성형 · 중점 기술: M2 구분하기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>스승의 날 주간의 목요일 7교시, 선생님이 교무실에 간 사이 부원들은 롤링페이퍼를 펼쳤다. 화이트보드 구석에는 지난주 서윤이 엄마 말투에서 출발해 ‘무의식은 변명이 될 수 있는가?’까지 올라간 사다리 사진이 아직 붙어 있었다.</p>
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep9" style="zoom:0.9"><p class="kicker">물음표 공방 · 1학기 · 제9회</p><h1>선생님, 그냥 답 알려 주시면 안 돼요?</h1><p class="meta">게재 권장 5월 3주 · 핵심 개념: 이성(핵심), 교육(확장), 자유(확장) · 최종 문항: P 가능성형 · 중점 기술: M2 구분하기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>스승의 날 주간의 목요일 7교시, 선생님이 교무실에 간 사이 부원들은 롤링페이퍼를 펼쳤다. 화이트보드 구석에는 지난주 서윤이 엄마 말투에서 출발해 ‘무의식은 변명이 될 수 있는가?’까지 올라간 사다리 사진이 아직 붙어 있었다.</p>
 <p>하린은 펜을 한참 굴리다가 한 줄을 썼다. ‘선생님 수업은 답이 없어서 답답해요ㅋㅋ’ 써 놓고 보니 ‘ㅋㅋ’로는 가려지지 않는 진심이었다. 하린은 얼른 수정 테이프로 그 줄을 덮었다.</p>
 <p>“어, 언니! 방금 그거 지웠죠?”</p>
 <p>어깨 너머로 보던 서윤이 눈을 반짝였다. 하린이 손을 저어도 서윤은 물러서지 않았다.</p>
@@ -275,14 +280,14 @@ hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 </section>
 <section class="box bench"><h2>⑧ 논술 작업대</h2><p>이번 회는 텍스트 해설 세 단계 가운데 1단계(기초)예요. 질문을 바꿀 때 쓰던 M2 구분하기가 해설에서는 글의 뼈대를 세우는 도구가 돼요.</p>
 <h3>1. 대립어에 동그라미 치기</h3>
-<p>위정편 15장에서 맞서는 낱말 쌍을 찾아보세요. 學과 思, 罔과 殆예요. 문장은 ‘A만 있고 B가 없으면 X, B만 있고 A가 없으면 Y’로 짝이 맞아요. 그러니 이 글의 주장은 ‘배움이 낫다’도 ‘생각이 낫다’도 아니고, 둘 중 하나로는 앎에 닿지 못한다는 쪽이에요. 17장의 知와 不知는 여기에 ‘내 앎의 경계를 아는 일’을 보태요.</p>
+<p>위정편 15장에서 맞서는 낱말 쌍을 찾아보세요. 學과 思, 罔과 殆예요. 그러니 이 글의 주장은 ‘배움이 낫다’도 ‘생각이 낫다’도 아니고, 둘 중 하나로는 앎에 닿지 못한다는 쪽이에요. 17장의 知와 不知는 여기에 ‘내 앎의 경계를 아는 일’을 보태요.</p>
 <blockquote>
 <p>예시: 이 글은 배움과 생각을 맞세우되 어느 편도 들지 않는다. 한쪽이 빠졌을 때의 결과를 ‘흐릿함’과 ‘위태로움’으로 달리 이름 붙여, 두 활동이 서로를 채워야 함을 보여 준다.</p>
 </blockquote>
 <h3>2. ‘할 수 있다’를 둘로 가르기</h3>
 <p>P형 문항의 서론에서는 ‘할 수 있다’를 능력(실제로 해낼 수 있는가)과 자격(그래도 되는가, 누구에게 허락되는가)으로 갈라 문제를 세워요.</p>
 <blockquote>
-<p>예시: 생각하는 법을 배울 수 있느냐는 물음은 두 겹이다. 생각이 연습으로 익혀지는 능력인지 묻고, 동시에 그런 배움이 누구에게나 열려 있는지 묻는다.</p>
+<p>예시: 생각하는 법을 배울 수 있느냐는 물음은 생각이 연습으로 익혀지는 능력인지, 그 배움이 누구에게나 열려 있는지를 함께 묻는다.</p>
 </blockquote>
 </section>
 <section class="box yourturn"><h2>⑨ 너의 질문 차례</h2><p><strong>다른 형식의 문항</strong> — [텍스트 해설형] 다음 글을 해설하시오. 저자의 사상에 대한 지식은 필요하지 않다. 글을 정확히 이해하여 글이 다루는 문제를 밝히면 된다. (제시문: ⑥의 『논어』 위정편 15장과 17장)</p>
@@ -326,12 +331,12 @@ hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 <td>□/5</td>
 </tr>
 </tbody></table>
-<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘수학 공식은 왜 외워야 해?’를 보냈더니 ‘공식을 쓸 줄 아는 것과 왜 맞는지 아는 것은 같을까요?’라는 발문이 돌아왔다면, 그건 M 몇 번 기술일까요? 내가 받은 발문 옆에도 기술 번호를 적어 보세요.</p>
+<p>고쳐 쓴 질문을 다음 수업에 질문 보내기로 제출해 보세요. 선생님의 질문 기록에 Q0와 함께 남아 변화가 보입니다. 질문ON이 돌려준 후속 발문도 살펴보세요. ‘수학 공식은 왜 외워야 해?’를 보냈더니 ‘공식을 쓸 줄 아는 것과 왜 맞는지 아는 것은 같을까요?’라는 발문이 돌아왔다면, 그건 M 몇 번 기술일까요?</p>
 <p><strong>연결 교과</strong> — 교육의 이해, 윤리와 사상(유학, 근대 계몽, 조선 성리학), 인간과 철학, 논리와 사고</p>
 <p><strong>다음 주 예고</strong> — 미술 시간에 본 변기 한 대와 채아의 낙서 한 장이 ‘도대체 예술이 뭐야?’라는 질문을 데려와요.</p>
 </section>
 <section class="teacher"><h2>⑩ 교사용 노트(부록)</h2><ul>
-<li>롤링페이퍼에 ‘좋은 가르침’의 기준을 먼저 적게 한 뒤, 위정편 15장과 17장을 대립어 중심으로 해설하게 한다.</li>
+<li>‘좋은 가르침’의 기준을 먼저 적게 한 뒤 위정편 15·17장을 대립어 중심으로 해설하게 한다.</li>
 <li>숫자만 바꾼 문제 실험은 학생이 고른 문제로만 하고, 점수 비교나 공개 채점은 하지 않는다.</li>
 <li>임윤지당은 당시 제도의 사실까지만 다루고, 젠더 논쟁으로 번지면 특정 입장을 주입하지 않을 것.</li>
 <li>‘그럼 학교는 필요 없나’ 같은 범위 밖 질문은 N형 카드로 따로 받아 게시판에 남긴다.</li>

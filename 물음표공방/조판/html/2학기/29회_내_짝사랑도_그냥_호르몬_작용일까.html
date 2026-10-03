@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,9 +46,13 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
-</style></head><body><main><article class="ep" id="ep29"><p class="kicker">물음표 공방 · 2학기 · 제29회</p><h1>내 짝사랑도 그냥 호르몬 작용일까</h1><p class="meta">게재 권장 12월 1주(기말고사 직전 마지막 모임) · 핵심 개념: 과학(핵심), 의식(확장), 사랑(확장) · 최종 문항: P 가능성형 · 중점 기술: M6 범위 조절하기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>기말고사 전 마지막 모임이었다. 지난주 콩이 이야기 끝에 만든 파란 카드 ‘죽음은 삶에 의미를 주는가?’는 도서관 1층 게시판에서 아직 포스트잇을 모으고 있었다. 세미나실에서 생명과학 문제집의 신경계와 호르몬 단원을 풀던 채아의 형광펜이 한 지문에서 멈췄다. ‘사랑에 빠지면 뇌에서 도파민과 옥시토신이 분비된다.’ 그 사람의 이름이 알림에 뜰 때마다 숨을 한 번 고르던 일, 문제 한 줄을 세 번씩 다시 읽던 밤들이 그 한 문장 속으로 빨려 들어가는 것 같았다. 채아는 펜을 내려놓았다.</p>
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep29" style="zoom:0.91"><p class="kicker">물음표 공방 · 2학기 · 제29회</p><h1>내 짝사랑도 그냥 호르몬 작용일까</h1><p class="meta">게재 권장 12월 1주(기말고사 직전 마지막 모임) · 핵심 개념: 과학(핵심), 의식(확장), 사랑(확장) · 최종 문항: P 가능성형 · 중점 기술: M6 범위 조절하기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>기말고사 전 마지막 모임이었다. 지난주 콩이 이야기 끝에 만든 파란 카드 ‘죽음은 삶에 의미를 주는가?’는 도서관 1층 게시판에서 아직 포스트잇을 모으고 있었다. 세미나실에서 생명과학 문제집의 신경계와 호르몬 단원을 풀던 채아의 형광펜이 한 지문에서 멈췄다. ‘사랑에 빠지면 뇌에서 도파민과 옥시토신이 분비된다.’ 그 사람의 이름이 알림에 뜰 때마다 숨을 한 번 고르던 일, 문제 한 줄을 세 번씩 다시 읽던 밤들이 그 한 문장 속으로 빨려 들어가는 것 같았다. 채아는 펜을 내려놓았다.</p>
 <p>“하린아, 그럼 내가 그 사람 생각하는 것도 그냥 화학 반응이야?”</p>
 <p>“응, 원리상으로는.”</p>
 <p>기출 문제를 넘기던 하린은 대답부터 하고서야 고개를 들었다. 채아는 웃지도 따지지도 않고 지문만 내려다보고 있었다. 하린은 무언가 덧붙이려다 입을 다물었다.</p>

@@ -20,10 +20,10 @@ h1,h2,h3,.kicker,.meta,table,.box-label{font-family:'Pretendard','Pretendard Var
 .kicker{font-size:8.6pt; letter-spacing:.08em; color:var(--muted); margin:0 0 4px}
 h1{font-size:19pt; line-height:1.35; margin:0 0 8px; word-break:keep-all; font-weight:800}
 .meta{font-size:8.4pt; color:var(--muted); border-top:2px solid var(--ink); border-bottom:1px solid var(--line); padding:6px 0; margin:0 0 14px; word-break:keep-all; text-align:left}
-h2{font-size:11.6pt; margin:16px 0 7px; font-weight:800; break-after:avoid; word-break:keep-all}
+h2{font-size:11.6pt; margin:13px 0 6px; font-weight:800; break-after:avoid; word-break:keep-all}
 h3{font-size:10.2pt; margin:10px 0 5px; font-weight:700; break-after:avoid; word-break:keep-all}
 section{margin:0 0 6px}
-.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px; break-inside:auto}
+.box{border-radius:6px; padding:9px 13px 6px; margin:10px 0 12px}
 .box h2{margin-top:2px}
 .yellow{background:var(--yellow); border-left:5px solid var(--yellow-b)}
 .green{background:var(--green); border-left:5px solid var(--green-b)}
@@ -31,11 +31,12 @@ section{margin:0 0 6px}
 .blue{background:linear-gradient(180deg,var(--blue),var(--purple)); border-left:5px solid var(--blue-b)}
 .bench{background:var(--bench); border-left:5px solid var(--bench-b)}
 .yourturn{border:1.5px dashed var(--bench-b)}
-.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:14px; padding-top:4px}
-.teacher h2{font-size:10pt; color:var(--muted)}
+.teacher{border-top:1px solid var(--line); font-size:9pt; color:#3d4352; margin-top:8px; padding-top:2px}
+.teacher h2{font-size:10pt; color:var(--muted); margin:6px 0 4px}
+.teacher ul{margin:2px 0 0} .teacher li{margin:0 0 1px; line-height:1.6}
 .blue strong{font-family:'Pretendard',sans-serif}
 .blue p > strong:only-child{display:block; font-size:12.4pt; line-height:1.5; margin:4px 0; color:#173d7a; text-align:left}
-table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px; break-inside:auto}
+table{width:100%; border-collapse:collapse; font-size:8.5pt; line-height:1.5; margin:6px 0 8px}
 th,td{border:1px solid var(--line); padding:4px 6px; vertical-align:top; text-align:left}
 th{background:rgba(0,0,0,.045); font-weight:700}
 tr{break-inside:avoid}
@@ -45,9 +46,13 @@ li{margin:0 0 3px}
 code{font-family:'Pretendard',sans-serif; font-size:.92em; background:rgba(0,0,0,.05); padding:0 3px; border-radius:3px}
 hr{border:0; border-top:1px solid var(--line); margin:12px 0}
 .ep + .ep{break-before:page}
+/* 쪽 나눔: 카드 상자·질문 사다리·교사용 노트·표는 통째로 넘기고, 서술은 문단 사이에서만 나눈다 */
+section.box, section.ladder, section.teacher, table, blockquote, ul, ol{break-inside:avoid}
+p, li{break-inside:avoid; orphans:3; widows:3}
+.kicker, h1, .meta{break-after:avoid}
 @media screen{ body{padding:28px 0} .ep{padding:0 0 40px} }
-@page{size:A4; margin:17mm 16mm 18mm}
-</style></head><body><main><article class="ep" id="ep17"><p class="kicker">물음표 공방 · 2학기 · 제17회</p><h1>사진을 지우면 그날도 지워질까</h1><p class="meta">게재 권장 8월 4주 · 핵심 개념: 시간(핵심), 기억(확장), 기술(확장) · 최종 문항: V 가치·비교형 · 중점 기술: M9 사고실험 걸기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>개학 날 7교시, 도서관 3층 끝 세미나실의 선생님 자리는 비어 있었다. 방학 직전 서윤이 처음 진행을 맡아 ‘하고 싶은 대로 하는 것이 자유인가?’로 1학기를 닫았고, 선생님은 사상가 카드 40장이 든 발췌문 상자를 남기고 연수를 떠났다. 뚜껑 안쪽에는 ‘반례는 선물이에요.’라는 쪽지 한 장이 붙어 있었다. 이제 공방은 학생들끼리 꾸려 가야 했다.</p>
+@page{size:A4; margin:14mm 16mm 15mm}
+</style></head><body><main><article class="ep" id="ep17" style="zoom:0.95"><p class="kicker">물음표 공방 · 2학기 · 제17회</p><h1>사진을 지우면 그날도 지워질까</h1><p class="meta">게재 권장 8월 4주 · 핵심 개념: 시간(핵심), 기억(확장), 기술(확장) · 최종 문항: V 가치·비교형 · 중점 기술: M9 사고실험 걸기</p><section class="scene"><h2>① 장면 — 질문이 태어나는 순간</h2><p>개학 날 7교시, 도서관 3층 끝 세미나실의 선생님 자리는 비어 있었다. 방학 직전 서윤이 처음 진행을 맡아 ‘하고 싶은 대로 하는 것이 자유인가?’로 1학기를 닫았고, 선생님은 사상가 카드 40장이 든 발췌문 상자를 남기고 연수를 떠났다. 뚜껑 안쪽에는 ‘반례는 선물이에요.’라는 쪽지 한 장이 붙어 있었다. 이제 공방은 학생들끼리 꾸려 가야 했다.</p>
 <p>채아는 새 사다리를 그리기 전에 빈 화이트보드부터 찍어 두려 했다. 그 순간 화면에 ‘저장 공간 부족’ 알림이 떴다. 사진첩에는 방학 동안 찍은 사진 3,000장이 끝없이 이어졌다. 바다, 빙수, 사촌 동생의 생일 케이크. 하나를 지우려던 엄지가 허공에서 멈췄다. 이걸 지우면 그날도 같이 지워질 것 같았다.</p>
 <p>격주로 오는 민지가 마침 이번 주에는 자리에 있었다. 채아는 옆자리로 화면을 내밀었다.</p>
 <p>“언니는 방학 사진 몇 장이에요?”</p>
